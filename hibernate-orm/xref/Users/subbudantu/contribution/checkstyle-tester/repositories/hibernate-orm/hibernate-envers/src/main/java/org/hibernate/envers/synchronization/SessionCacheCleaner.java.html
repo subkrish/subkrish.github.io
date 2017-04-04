@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>SessionCacheCleaner xref</title>
+<link type="text/css" rel="stylesheet" href="../../../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="org/hibernate/envers/synchronization/SessionCacheCleaner.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> org.hibernate.envers.synchronization;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> org.hibernate.Session;
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <strong class="jxr_keyword">import</strong> org.hibernate.action.spi.AfterTransactionCompletionProcess;
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">import</strong> org.hibernate.engine.spi.SessionImplementor;
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">import</strong> org.hibernate.event.spi.EventSource;
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_javadoccomment"> * Class responsible for evicting audit data entries that have been stored in the session level cache.</em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_javadoccomment"> * This operation increases Envers performance in case of massive entity updates without clearing persistence context.</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_javadoccomment"> * @author Lukasz Antoniak (lukasz dot antoniak at gmail dot com)</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> SessionCacheCleaner {
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>      <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <em class="jxr_javadoccomment">     * Schedules audit data removal from session level cache after transaction completion. The operation is performed</em>
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  <em class="jxr_javadoccomment">     * regardless of commit success.</em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  <em class="jxr_javadoccomment">     * @param session Active Hibernate session.</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <em class="jxr_javadoccomment">     * @param data Audit data that shall be evicted (e.g. revision data or entity snapshot)</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> scheduleAuditDataRemoval(<strong class="jxr_keyword">final</strong> Session session, <strong class="jxr_keyword">final</strong> Object data) {
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>          ((EventSource) session).getActionQueue().registerProcess(<strong class="jxr_keyword">new</strong> AfterTransactionCompletionProcess() {
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>              <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> doAfterTransactionCompletion(<strong class="jxr_keyword">boolean</strong> success, SessionImplementor session) {
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>                  <strong class="jxr_keyword">if</strong> (!session.isClosed()) {
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>                      ((Session) session).evict(data);
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>                  }
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>              }
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>          });
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>      }
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  }
+</pre>
+<hr/>
+<div id="footer"></div>
+</body>
+</html>
