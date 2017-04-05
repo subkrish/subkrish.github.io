@@ -1,0 +1,2063 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">ParenPad</td>
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>EXPR</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												tokens
+												
+													<li>EXPR</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Unique rows</th>
+							
+								<th>Severity-warning</th>
+							
+								<th>Severity-error</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">6386</td>
+							<td id="totalBase">2196</td>
+							
+								<td id="warningSeverityNumBase">2124</td>
+							
+								<td id="errorSeverityNumBase">72</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">6386</td>
+							<td id="totalPatch">2091</td>
+							
+								<td id="warningSeverityNumPatch">2019</td>
+							
+								<td id="errorSeverityNumPatch">72</td>
+							
+						</tr>
+						<tr class="d">
+							<td>difference</td>
+							<td id="filesDiff">27</td>
+							<td id="totalDiff">105</td>
+							
+								<td id="warningSeverityNumDiff">105</td>
+							
+								<td id="errorSeverityNumDiff">0</td>
+							
+						<tr>
+					</table>
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">105</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Unique rows:">Unique rows:</h2>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/bytecode/internal/javassist/FastClass.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A1" href = "#A1">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/bytecode/internal/javassist/FastClass.java.html#L186">186</a></td>
+								
+									
+									<td>43</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A2" href = "#A2">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/bytecode/internal/javassist/FastClass.java.html#L186">186</a></td>
+								
+									
+									<td>59</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/collection/internal/PersistentIndexedElementHolder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A3" href = "#A3">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/collection/internal/PersistentIndexedElementHolder.java.html#L240">240</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A4" href = "#A4">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/collection/internal/PersistentIndexedElementHolder.java.html#L240">240</a></td>
+								
+									
+									<td>54</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A5" href = "#A5">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/collection/internal/PersistentIndexedElementHolder.java.html#L246">246</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A6" href = "#A6">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/collection/internal/PersistentIndexedElementHolder.java.html#L246">246</a></td>
+								
+									
+									<td>46</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A7" href = "#A7">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/collection/internal/PersistentIndexedElementHolder.java.html#L250">250</a></td>
+								
+									
+									<td>58</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A8" href = "#A8">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/collection/internal/PersistentIndexedElementHolder.java.html#L250">250</a></td>
+								
+									
+									<td>79</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A9" href = "#A9">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L224">224</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A10" href = "#A10">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L224">224</a></td>
+								
+									
+									<td>54</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A11" href = "#A11">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L240">240</a></td>
+								
+									
+									<td>53</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A12" href = "#A12">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L240">240</a></td>
+								
+									
+									<td>74</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A13" href = "#A13">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L244">244</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A14" href = "#A14">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L244">244</a></td>
+								
+									
+									<td>59</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A15" href = "#A15">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L257">257</a></td>
+								
+									
+									<td>53</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A16" href = "#A16">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L257">257</a></td>
+								
+									
+									<td>74</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A17" href = "#A17">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L261">261</a></td>
+								
+									
+									<td>49</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A18" href = "#A18">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L261">261</a></td>
+								
+									
+									<td>75</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A19" href = "#A19">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L266">266</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A20" href = "#A20">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/id/IdentifierGeneratorHelper.java.html#L266">266</a></td>
+								
+									
+									<td>59</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/internal/util/collections/IdentityMap.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A21" href = "#A21">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/internal/util/collections/IdentityMap.java.html#L165">165</a></td>
+								
+									
+									<td>74</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A22" href = "#A22">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/internal/util/collections/IdentityMap.java.html#L165">165</a></td>
+								
+									
+									<td>100</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A23" href = "#A23">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/internal/util/collections/IdentityMap.java.html#L238">238</a></td>
+								
+									
+									<td>40</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A24" href = "#A24">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/internal/util/collections/IdentityMap.java.html#L238">238</a></td>
+								
+									
+									<td>60</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/loader/Loader.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A25" href = "#A25">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/loader/Loader.java.html#L998">998</a></td>
+								
+									
+									<td>42</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A26" href = "#A26">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/loader/Loader.java.html#L998">998</a></td>
+								
+									
+									<td>70</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/transform/AliasToBeanConstructorResultTransformer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A27" href = "#A27">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/transform/AliasToBeanConstructorResultTransformer.java.html#L89">89</a></td>
+								
+									
+									<td>57</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A28" href = "#A28">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/transform/AliasToBeanConstructorResultTransformer.java.html#L89">89</a></td>
+								
+									
+									<td>107</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/transform/DistinctResultTransformer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A29" href = "#A29">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/transform/DistinctResultTransformer.java.html#L67">67</a></td>
+								
+									
+									<td>60</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A30" href = "#A30">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/main/java/org/hibernate/transform/DistinctResultTransformer.java.html#L67">67</a></td>
+								
+									
+									<td>79</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/collectionelement/CountryAttitude.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A31" href = "#A31">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/collectionelement/CountryAttitude.java.html#L56">56</a></td>
+								
+									
+									<td>41</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A32" href = "#A32">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/collectionelement/CountryAttitude.java.html#L56">56</a></td>
+								
+									
+									<td>63</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/Customer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A33" href = "#A33">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/Customer.java.html#L230">230</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A34" href = "#A34">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/Customer.java.html#L230">230</a></td>
+								
+									
+									<td>46</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/CustomerInventory.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A35" href = "#A35">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/CustomerInventory.java.html#L136">136</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A36" href = "#A36">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/CustomerInventory.java.html#L136">136</a></td>
+								
+									
+									<td>60</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A37" href = "#A37">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/CustomerInventory.java.html#L139">139</a></td>
+								
+									
+									<td>42</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A38" href = "#A38">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/CustomerInventory.java.html#L139">139</a></td>
+								
+									
+									<td>68</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A39" href = "#A39">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/CustomerInventory.java.html#L142">142</a></td>
+								
+									
+									<td>42</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A40" href = "#A40">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/CustomerInventory.java.html#L142">142</a></td>
+								
+									
+									<td>68</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A41" href = "#A41">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/CustomerInventory.java.html#L146">146</a></td>
+								
+									
+									<td>41</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A42" href = "#A42">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/CustomerInventory.java.html#L146">146</a></td>
+								
+									
+									<td>67</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/Item.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A43" href = "#A43">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/Item.java.html#L136">136</a></td>
+								
+									
+									<td>36</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A44" href = "#A44">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/Item.java.html#L136">136</a></td>
+								
+									
+									<td>51</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/lazy/CustomerTwo.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A45" href = "#A45">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/lazy/CustomerTwo.java.html#L236">236</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A46" href = "#A46">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b/specjmapid/lazy/CustomerTwo.java.html#L236">236</a></td>
+								
+									
+									<td>49</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b2/CustomerInventory.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A47" href = "#A47">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b2/CustomerInventory.java.html#L107">107</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A48" href = "#A48">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b2/CustomerInventory.java.html#L107">107</a></td>
+								
+									
+									<td>60</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A49" href = "#A49">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b2/CustomerInventory.java.html#L110">110</a></td>
+								
+									
+									<td>42</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A50" href = "#A50">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b2/CustomerInventory.java.html#L110">110</a></td>
+								
+									
+									<td>68</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A51" href = "#A51">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b2/CustomerInventory.java.html#L113">113</a></td>
+								
+									
+									<td>42</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A52" href = "#A52">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b2/CustomerInventory.java.html#L113">113</a></td>
+								
+									
+									<td>68</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A53" href = "#A53">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b2/CustomerInventory.java.html#L117">117</a></td>
+								
+									
+									<td>41</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A54" href = "#A54">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/derivedidentities/e1/b2/CustomerInventory.java.html#L117">117</a></td>
+								
+									
+									<td>67</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/manytoone/Parent.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A55" href = "#A55">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/manytoone/Parent.java.html#L26">26</a></td>
+								
+									
+									<td>44</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A56" href = "#A56">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/manytoone/Parent.java.html#L26">26</a></td>
+								
+									
+									<td>57</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/onetomany/Parent.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A57" href = "#A57">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/onetomany/Parent.java.html#L35">35</a></td>
+								
+									
+									<td>44</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A58" href = "#A58">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/annotations/onetomany/Parent.java.html#L35">35</a></td>
+								
+									
+									<td>57</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A59" href = "#A59">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L505">505</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A60" href = "#A60">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L505">505</a></td>
+								
+									
+									<td>55</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A61" href = "#A61">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L506">506</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A62" href = "#A62">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L506">506</a></td>
+								
+									
+									<td>55</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A63" href = "#A63">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L527">527</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A64" href = "#A64">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L527">527</a></td>
+								
+									
+									<td>55</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A65" href = "#A65">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L528">528</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A66" href = "#A66">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L528">528</a></td>
+								
+									
+									<td>55</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A67" href = "#A67">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L549">549</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A68" href = "#A68">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L549">549</a></td>
+								
+									
+									<td>55</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A69" href = "#A69">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L550">550</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A70" href = "#A70">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/criteria/CriteriaQueryTest.java.html#L550">550</a></td>
+								
+									
+									<td>55</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/event/collection/ChildValue.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A71" href = "#A71">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/event/collection/ChildValue.java.html#L54">54</a></td>
+								
+									
+									<td>38</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A72" href = "#A72">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/event/collection/ChildValue.java.html#L54">54</a></td>
+								
+									
+									<td>64</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/filter/Product.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A73" href = "#A73">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/filter/Product.java.html#L57">57</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A74" href = "#A74">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/filter/Product.java.html#L57">57</a></td>
+								
+									
+									<td>39</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/hql/ASTParserLoadingTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A75" href = "#A75">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/hql/ASTParserLoadingTest.java.html#L3001">3001</a></td>
+								
+									
+									<td>66</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A76" href = "#A76">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/hql/ASTParserLoadingTest.java.html#L3001">3001</a></td>
+								
+									
+									<td>96</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/hql/Classification.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A77" href = "#A77">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/hql/Classification.java.html#L47">47</a></td>
+								
+									
+									<td>37</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A78" href = "#A78">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/hql/Classification.java.html#L47">47</a></td>
+								
+									
+									<td>58</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A79" href = "#A79">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L113">113</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A80" href = "#A80">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L113">113</a></td>
+								
+									
+									<td>41</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A81" href = "#A81">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L169">169</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A82" href = "#A82">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L169">169</a></td>
+								
+									
+									<td>41</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A83" href = "#A83">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L174">174</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A84" href = "#A84">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L174">174</a></td>
+								
+									
+									<td>41</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A85" href = "#A85">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L179">179</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A86" href = "#A86">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L179">179</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A87" href = "#A87">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L206">206</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A88" href = "#A88">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/CustomPersister.java.html#L206">206</a></td>
+								
+									
+									<td>36</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/FooBarTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A89" href = "#A89">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/FooBarTest.java.html#L1765">1765</a></td>
+								
+									
+									<td>57</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A90" href = "#A90">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/FooBarTest.java.html#L1765">1765</a></td>
+								
+									
+									<td>72</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A91" href = "#A91">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/FooBarTest.java.html#L2324">2324</a></td>
+								
+									
+									<td>48</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A92" href = "#A92">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/FooBarTest.java.html#L2324">2324</a></td>
+								
+									
+									<td>71</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/ParentChildTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A93" href = "#A93">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/ParentChildTest.java.html#L677">677</a></td>
+								
+									
+									<td>26</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A94" href = "#A94">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/ParentChildTest.java.html#L677">677</a></td>
+								
+									
+									<td>116</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/Sortable.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A95" href = "#A95">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/legacy/Sortable.java.html#L15">15</a></td>
+								
+									
+									<td>41</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/type/TypeTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A96" href = "#A96">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/type/TypeTest.java.html#L301">301</a></td>
+								
+									
+									<td>48</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A97" href = "#A97">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-core/src/test/java/org/hibernate/test/type/TypeTest.java.html#L301">301</a></td>
+								
+									
+									<td>71</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-ehcache/src/main/java/org/hibernate/cache/ehcache/internal/strategy/AbstractReadWriteEhcacheAccessStrategy.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A98" href = "#A98">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-ehcache/src/main/java/org/hibernate/cache/ehcache/internal/strategy/AbstractReadWriteEhcacheAccessStrategy.java.html#L371">371</a></td>
+								
+									
+									<td>37</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A99" href = "#A99">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-ehcache/src/main/java/org/hibernate/cache/ehcache/internal/strategy/AbstractReadWriteEhcacheAccessStrategy.java.html#L371">371</a></td>
+								
+									
+									<td>46</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A100" href = "#A100">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-ehcache/src/main/java/org/hibernate/cache/ehcache/internal/strategy/AbstractReadWriteEhcacheAccessStrategy.java.html#L371">371</a></td>
+								
+									
+									<td>81</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A101" href = "#A101">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-ehcache/src/main/java/org/hibernate/cache/ehcache/internal/strategy/AbstractReadWriteEhcacheAccessStrategy.java.html#L371">371</a></td>
+								
+									
+									<td>90</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-testing/src/main/java/org/hibernate/testing/cache/AbstractReadWriteAccessStrategy.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A102" href = "#A102">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-testing/src/main/java/org/hibernate/testing/cache/AbstractReadWriteAccessStrategy.java.html#L318">318</a></td>
+								
+									
+									<td>53</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A103" href = "#A103">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-testing/src/main/java/org/hibernate/testing/cache/AbstractReadWriteAccessStrategy.java.html#L318">318</a></td>
+								
+									
+									<td>62</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A104" href = "#A104">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;(&#39; is followed by whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-testing/src/main/java/org/hibernate/testing/cache/AbstractReadWriteAccessStrategy.java.html#L318">318</a></td>
+								
+									
+									<td>97</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A105" href = "#A105">#</a></td>
+								<td>warning</td>
+								<td>ParenPad</td>
+								<td>&#39;)&#39; is preceded with whitespace.</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-orm/hibernate-testing/src/main/java/org/hibernate/testing/cache/AbstractReadWriteAccessStrategy.java.html#L318">318</a></td>
+								
+									
+									<td>106</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
