@@ -1,0 +1,3771 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">ExplicitInitialization</td>
+										<td class="b">
+											
+										</td>
+										
+										
+										<td class="a">
+											
+												onlyObjectReferences
+												
+													<li>true</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Unique rows</th>
+							
+								<th>Severity-warning</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">752</td>
+							<td id="totalBase">320</td>
+							
+								<td id="warningSeverityNumBase">320</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">752</td>
+							<td id="totalPatch">157</td>
+							
+								<td id="warningSeverityNumPatch">157</td>
+							
+						</tr>
+						<tr class="d">
+							<td>difference</td>
+							<td id="filesDiff">92</td>
+							<td id="totalDiff">163</td>
+							
+								<td id="warningSeverityNumDiff">163</td>
+							
+						<tr>
+					</table>
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">163</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Unique rows:">Unique rows:</h2>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/common/BaseJmsOrder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A1" href = "#A1">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;counter&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/common/BaseJmsOrder.java.html#L64">64</a></td>
+								
+									
+									<td>27</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A2" href = "#A2">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;failureCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/common/BaseJmsOrder.java.html#L66">66</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A3" href = "#A3">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;propertiesSize&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/common/BaseJmsOrder.java.html#L82">82</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/conf/AttributeFilter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A4" href = "#A4">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;noFilter&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/conf/AttributeFilter.java.html#L81">81</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/BaseCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A5" href = "#A5">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prevLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/BaseCmd.java.html#L85">85</a></td>
+								
+									
+									<td>19</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/BaseSQLCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A6" href = "#A6">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/BaseSQLCmd.java.html#L56">56</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/FileInfo.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A7" href = "#A7">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;size&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/FileInfo.java.html#L88">88</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A8" href = "#A8">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;status&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/FileInfo.java.html#L90">90</a></td>
+								
+									
+									<td>16</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A9" href = "#A9">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;availability&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/FileInfo.java.html#L92">92</a></td>
+								
+									
+									<td>16</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/GPPPSQueryCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A10" href = "#A10">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/GPPPSQueryCmd.java.html#L59">59</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/GPWLQueryCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A11" href = "#A11">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/GPWLQueryCmd.java.html#L65">65</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/HPQueryCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A12" href = "#A12">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/HPQueryCmd.java.html#L61">61</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/HPRetrieveCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A13" href = "#A13">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/HPRetrieveCmd.java.html#L59">59</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/MPPSQueryCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A14" href = "#A14">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/MPPSQueryCmd.java.html#L61">61</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/MWLQueryCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A15" href = "#A15">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/MWLQueryCmd.java.html#L86">86</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A16" href = "#A16">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryCmd.java.html#L89">89</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A17" href = "#A17">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lazyFetchSeriesAttrsOnImageLevelQuery&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryCmd.java.html#L92">92</a></td>
+								
+									
+									<td>27</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryExternalRetrieveAETsOfSeriesCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A18" href = "#A18">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryExternalRetrieveAETsOfSeriesCmd.java.html#L56">56</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryFilesCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A19" href = "#A19">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryFilesCmd.java.html#L68">68</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryFilesOfSeriesCmd2.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A20" href = "#A20">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryFilesOfSeriesCmd2.java.html#L65">65</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A21" href = "#A21">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;numberOfSeriesRelatedInstances&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryFilesOfSeriesCmd2.java.html#L67">67</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryForwardCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A22" href = "#A22">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryForwardCmd.java.html#L55">55</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A23" href = "#A23">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lastSeriesPk&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryForwardCmd.java.html#L57">57</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryHSMMigrateCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A24" href = "#A24">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryHSMMigrateCmd.java.html#L59">59</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryPrivateStudiesCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A25" href = "#A25">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryPrivateStudiesCmd.java.html#L63">63</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A26" href = "#A26">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hideMissingStudies&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryPrivateStudiesCmd.java.html#L79">79</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryStudiesCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A27" href = "#A27">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryStudiesCmd.java.html#L69">69</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryStudyPermissionCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A28" href = "#A28">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/QueryStudyPermissionCmd.java.html#L63">63</a></td>
+								
+									
+									<td>27</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/RetrieveCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A29" href = "#A29">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/RetrieveCmd.java.html#L66">66</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A30" href = "#A30">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lazyFetchSeriesAttrs&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/RetrieveCmd.java.html#L69">69</a></td>
+								
+									
+									<td>27</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/RetrieveStudyDatesCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A31" href = "#A31">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/RetrieveStudyDatesCmd.java.html#L57">57</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/SqlBuilder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A32" href = "#A32">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;limit&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/SqlBuilder.java.html#L79">79</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A33" href = "#A33">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;offset&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/SqlBuilder.java.html#L80">80</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A34" href = "#A34">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;distinct&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/SqlBuilder.java.html#L82">82</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A35" href = "#A35">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;subQueryMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/SqlBuilder.java.html#L83">83</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A36" href = "#A36">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;matchNotSupported&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/SqlBuilder.java.html#L85">85</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/UPSQueryCmd.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A37" href = "#A37">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactionIsolationLevel&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-ejb/src/java/org/dcm4chex/archive/ejb/jdbc/UPSQueryCmd.java.html#L62">62</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-hl7/src/java/org/dcm4chex/archive/hl7/HL7ServerService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A38" href = "#A38">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;soTimeout&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-hl7/src/java/org/dcm4chex/archive/hl7/HL7ServerService.java.html#L144">144</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A39" href = "#A39">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;numberOfReceivedMessages&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-hl7/src/java/org/dcm4chex/archive/hl7/HL7ServerService.java.html#L146">146</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-hl7/src/java/org/dcm4chex/archive/hl7/PrefetchService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A40" href = "#A40">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;sourceQueryPriority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-hl7/src/java/org/dcm4chex/archive/hl7/PrefetchService.java.html#L130">130</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A41" href = "#A41">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;destinationQueryPriority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-hl7/src/java/org/dcm4chex/archive/hl7/PrefetchService.java.html#L131">131</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A42" href = "#A42">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;retrievePriority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-hl7/src/java/org/dcm4chex/archive/hl7/PrefetchService.java.html#L132">132</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/RIDSupport.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A43" href = "#A43">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;useOrigFile&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/RIDSupport.java.html#L189">189</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/ecg/WaveForm16Buffer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A44" href = "#A44">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;offset&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/ecg/WaveForm16Buffer.java.html#L55">55</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/ecg/WaveForm8Buffer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A45" href = "#A45">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;offset&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/ecg/WaveForm8Buffer.java.html#L54">54</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/ecg/xml/SVGCreator.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A46" href = "#A46">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;viewBoxY1&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/ecg/xml/SVGCreator.java.html#L90">90</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A47" href = "#A47">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;viewBoxX1&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/ecg/xml/SVGCreator.java.html#L91">91</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A48" href = "#A48">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;graphicXOffset&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/ecg/xml/SVGCreator.java.html#L95">95</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A49" href = "#A49">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;graphicYOffset&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/ecg/xml/SVGCreator.java.html#L96">96</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/xml/IHEDocumentList.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A50" href = "#A50">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;mostRecentResults&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-rid/src/java/org/dcm4chex/rid/mbean/xml/IHEDocumentList.java.html#L102">102</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/codec/BufferedImagePool.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A51" href = "#A51">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;poolMemory&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/codec/BufferedImagePool.java.html#L71">71</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A52" href = "#A52">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;borrowOrCreateCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/codec/BufferedImagePool.java.html#L72">72</a></td>
+								
+									
+									<td>19</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A53" href = "#A53">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;borrowCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/codec/BufferedImagePool.java.html#L73">73</a></td>
+								
+									
+									<td>19</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/findscu/FindScuService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A54" href = "#A54">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;priority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/findscu/FindScuService.java.html#L63">63</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/gpwlscp/GPWLFindScp.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A55" href = "#A55">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;canceled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/gpwlscp/GPWLFindScp.java.html#L111">111</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/gpwlscu/GPWLScuService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A56" href = "#A56">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;priority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/gpwlscu/GPWLScuService.java.html#L80">80</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPFindScp.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A57" href = "#A57">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;canceled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPFindScp.java.html#L92">92</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPMoveTask.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A58" href = "#A58">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;failed&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPMoveTask.java.html#L104">104</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A59" href = "#A59">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;warnings&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPMoveTask.java.html#L106">106</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A60" href = "#A60">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;completed&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPMoveTask.java.html#L108">108</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A61" href = "#A61">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;remaining&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPMoveTask.java.html#L110">110</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A62" href = "#A62">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;canceled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPMoveTask.java.html#L112">112</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPScpService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A63" href = "#A63">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;dimseTimeout&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/hpscp/HPScpService.java.html#L82">82</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/ianscu/IANScuService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A64" href = "#A64">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;scnPriority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/ianscu/IANScuService.java.html#L176">176</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mcmscu/MCMScuService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A65" href = "#A65">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;automaticMediaCreation&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mcmscu/MCMScuService.java.html#L152">152</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A66" href = "#A66">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;useInstanceInfo&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mcmscu/MCMScuService.java.html#L178">178</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A67" href = "#A67">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;priority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mcmscu/MCMScuService.java.html#L187">187</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/ForwardByQueryService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A68" href = "#A68">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;pollInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/ForwardByQueryService.java.html#L70">70</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A69" href = "#A69">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;delay&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/ForwardByQueryService.java.html#L71">71</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A70" href = "#A70">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lastSeriesPk&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/ForwardByQueryService.java.html#L73">73</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A71" href = "#A71">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;forwardPriority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/ForwardByQueryService.java.html#L77">77</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A72" href = "#A72">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;sqlIsValid&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/ForwardByQueryService.java.html#L87">87</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/ForwardService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A73" href = "#A73">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;forwardPriority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/ForwardService.java.html#L152">152</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/RouteOnPPSService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A74" href = "#A74">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;routingPriority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/movescu/RouteOnPPSService.java.html#L69">69</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mppsscu/MPPSEmulatorService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A75" href = "#A75">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;pollInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mppsscu/MPPSEmulatorService.java.html#L89">89</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscp/MWLFindScp.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A76" href = "#A76">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;canceled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscp/MWLFindScp.java.html#L126">126</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A77" href = "#A77">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;count&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscp/MWLFindScp.java.html#L128">128</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscp/MWLFindScpService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A78" href = "#A78">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;useProxy&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscp/MWLFindScpService.java.html#L104">104</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscu/MWLScuService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A79" href = "#A79">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;priority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscu/MWLScuService.java.html#L88">88</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscu/MwlReplicaService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A80" href = "#A80">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;taskInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscu/MwlReplicaService.java.html#L102">102</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A81" href = "#A81">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;countEqualErrors&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscu/MwlReplicaService.java.html#L125">125</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A82" href = "#A82">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;errorCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscu/MwlReplicaService.java.html#L126">126</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A83" href = "#A83">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;totalErrorCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscu/MwlReplicaService.java.html#L127">127</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A84" href = "#A84">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;priority&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/mwlscu/MwlReplicaService.java.html#L131">131</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/FindScp.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A85" href = "#A85">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;canceled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/FindScp.java.html#L369">369</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A86" href = "#A86">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;count&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/FindScp.java.html#L371">371</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/GetTask.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A87" href = "#A87">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;warnings&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/GetTask.java.html#L92">92</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A88" href = "#A88">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;completed&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/GetTask.java.html#L94">94</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A89" href = "#A89">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;canceled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/GetTask.java.html#L96">96</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/MoveScu.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A90" href = "#A90">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;completed&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/MoveScu.java.html#L81">81</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A91" href = "#A91">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;failed&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/MoveScu.java.html#L82">82</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A92" href = "#A92">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;warnings&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/MoveScu.java.html#L83">83</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/MoveTask.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A93" href = "#A93">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;warnings&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/MoveTask.java.html#L121">121</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A94" href = "#A94">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;completed&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/MoveTask.java.html#L123">123</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A95" href = "#A95">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;canceled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/MoveTask.java.html#L125">125</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A96" href = "#A96">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;moveAssocClosed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/MoveTask.java.html#L127">127</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/QueryRetrieveScpService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A97" href = "#A97">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;dimseTimeout&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/QueryRetrieveScpService.java.html#L219">219</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A98" href = "#A98">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;maxStoreOpsInvoked&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/QueryRetrieveScpService.java.html#L223">223</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A99" href = "#A99">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;retrieveRspStatusForNoMatchingInstanceToRetrieve&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/QueryRetrieveScpService.java.html#L241">241</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A100" href = "#A100">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;coerceAttributeTopDown&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/QueryRetrieveScpService.java.html#L267">267</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A101" href = "#A101">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;cFindRspDebugLogDeferToDoBeforeRsp&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/QueryRetrieveScpService.java.html#L269">269</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A102" href = "#A102">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;verifyMD5OnMakeCStoreRQ&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/qrscp/QueryRetrieveScpService.java.html#L271">271</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/stgcmt/StgCmtScuScpService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A103" href = "#A103">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;dimseTimeout&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/stgcmt/StgCmtScuScpService.java.html#L115">115</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScp.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A104" href = "#A104">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;studyDateInFilePath&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScp.java.html#L159">159</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A105" href = "#A105">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;sourceAETInFilePath&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScp.java.html#L161">161</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A106" href = "#A106">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hourInFilePath&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScp.java.html#L169">169</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A107" href = "#A107">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;serializeDBUpdate&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScp.java.html#L175">175</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A108" href = "#A108">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;maxCountUpdateDatabaseRetries&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScp.java.html#L179">179</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A109" href = "#A109">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;updateDatabaseRetryInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScp.java.html#L185">185</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A110" href = "#A110">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;coerceBeforeWrite&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScp.java.html#L207">207</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScpService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A111" href = "#A111">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;syncFileAfterCStoreRSP&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/storescp/StoreScpService.java.html#L237">237</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/stymgt/StudyMgtScuService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A112" href = "#A112">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;retryIfNoSuchSOPInstance&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/stymgt/StudyMgtScuService.java.html#L89">89</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/ups/UPSFindScp.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A113" href = "#A113">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;canceled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/ups/UPSFindScp.java.html#L125">125</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/ups/UPSScpService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A114" href = "#A114">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;dimseTimeout&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/dcm/ups/UPSScpService.java.html#L124">124</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/emf/EnhancedMFBuilder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A115" href = "#A115">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;curFrame&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/emf/EnhancedMFBuilder.java.html#L92">92</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/FileCopyByQueryService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A116" href = "#A116">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;pollInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/FileCopyByQueryService.java.html#L74">74</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A117" href = "#A117">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;delay&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/FileCopyByQueryService.java.html#L75">75</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A118" href = "#A118">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lastSeriesPk&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/FileCopyByQueryService.java.html#L77">77</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A119" href = "#A119">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;sqlIsValid&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/FileCopyByQueryService.java.html#L88">88</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/MigrationTask.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A120" href = "#A120">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;taskCounter&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/MigrationTask.java.html#L64">64</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/SyncFileStatusService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A121" href = "#A121">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;minFileAge&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/SyncFileStatusService.java.html#L89">89</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A122" href = "#A122">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;taskInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/SyncFileStatusService.java.html#L91">91</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/module/dicey/TransferThread.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A123" href = "#A123">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;stop&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/hsm/module/dicey/TransferThread.java.html#L21">21</a></td>
+								
+									
+									<td>22</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/AbstractDeleterService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A124" href = "#A124">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;maxNotAccessedFor&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/AbstractDeleterService.java.html#L97">97</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A125" href = "#A125">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;minNotAccessedFor&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/AbstractDeleterService.java.html#L99">99</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/CompressionService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A126" href = "#A126">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;taskInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/CompressionService.java.html#L87">87</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A127" href = "#A127">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;keepTempFileIfVerificationFails&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/CompressionService.java.html#L103">103</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/ConsistenceCheckService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A128" href = "#A128">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;taskInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/ConsistenceCheckService.java.html#L71">71</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/DeleteStudyService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A129" href = "#A129">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;createIANonStudyDelete&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/DeleteStudyService.java.html#L88">88</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/FileSystemMgt2Service.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A130" href = "#A130">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;adjustExpectedDataVolumePerDay&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/FileSystemMgt2Service.java.html#L102">102</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/LossyCompressionService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A131" href = "#A131">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;taskInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/LossyCompressionService.java.html#L104">104</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/MD5CheckService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A132" href = "#A132">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;taskInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/MD5CheckService.java.html#L76">76</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/PPSExceptionMgtService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A133" href = "#A133">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;delay&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/PPSExceptionMgtService.java.html#L76">76</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/StudyReconciliationService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A134" href = "#A134">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;taskInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/StudyReconciliationService.java.html#L86">86</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A135" href = "#A135">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;successStatus&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/mbean/StudyReconciliationService.java.html#L99">99</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/util/CacheJournal.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A136" href = "#A136">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;freeIsRunning&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/util/CacheJournal.java.html#L67">67</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/util/FileDataSource.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A137" href = "#A137">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;writeFile&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/util/FileDataSource.java.html#L141">141</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A138" href = "#A138">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;withoutPixeldata&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/util/FileDataSource.java.html#L142">142</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A139" href = "#A139">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;excludePrivate&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/util/FileDataSource.java.html#L143">143</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/xdsi/XDSIService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A140" href = "#A140">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;useXDSb&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/xdsi/XDSIService.java.html#L180">180</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A141" href = "#A141">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;removeNamespaceID&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/xdsi/XDSIService.java.html#L181">181</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/xdsi/XDSMetadata.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A142" href = "#A142">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;newFolder&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-sar/src/java/org/dcm4chex/archive/xdsi/XDSMetadata.java.html#L124">124</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-wado/src/java/org/dcm4chex/wado/mbean/WADOService.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A143" href = "#A143">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;clearCacheForReceivedSeries&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-wado/src/java/org/dcm4chex/wado/mbean/WADOService.java.html#L91">91</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-wado/src/java/org/dcm4chex/wado/mbean/WADOSupport.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A144" href = "#A144">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;disableDNS&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-wado/src/java/org/dcm4chex/wado/mbean/WADOSupport.java.html#L217">217</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A145" href = "#A145">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;renderOverlays&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-wado/src/java/org/dcm4chex/wado/mbean/WADOSupport.java.html#L244">244</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-wado/src/java/org/dcm4chex/wado/mbean/cache/WADOCacheImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A146" href = "#A146">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;clientRedirect&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-wado/src/java/org/dcm4chex/wado/mbean/cache/WADOCacheImpl.java.html#L101">101</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/BasicFormPagingModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A147" href = "#A147">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;offset&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/BasicFormPagingModel.java.html#L51">51</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A148" href = "#A148">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;total&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/BasicFormPagingModel.java.html#L55">55</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/FolderForm.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A149" href = "#A149">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;filterAET&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/FolderForm.java.html#L100">100</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A150" href = "#A150">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;noMatchForNoValue&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/FolderForm.java.html#L102">102</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/ae/AEEchoModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A151" href = "#A151">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;echoSucceed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/ae/AEEchoModel.java.html#L54">54</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/ae/AEModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A152" href = "#A152">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;checkHost&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/ae/AEModel.java.html#L80">80</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/gpwl/model/GPWLModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A153" href = "#A153">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isLocal&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/gpwl/model/GPWLModel.java.html#L76">76</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/mcmc/model/MCMModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A154" href = "#A154">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;mcmNotAvail&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/mcmc/model/MCMModel.java.html#L78">78</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A155" href = "#A155">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;checkAvail&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/mcmc/model/MCMModel.java.html#L88">88</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/model/PatientModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A156" href = "#A156">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;showXDS&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/model/PatientModel.java.html#L60">60</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/model/SeriesModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A157" href = "#A157">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;incorrectWLEntry&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/model/SeriesModel.java.html#L61">61</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/mpps/model/MPPSEntry.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A158" href = "#A158">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;numberOfInstances&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/mpps/model/MPPSEntry.java.html#L63">63</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/mwl/model/MWLEntry.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A159" href = "#A159">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;internalIdCounter&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/mwl/model/MWLEntry.java.html#L61">61</a></td>
+								
+									
+									<td>24</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/mwl/model/MWLModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A160" href = "#A160">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isLocal&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/mwl/model/MWLModel.java.html#L85">85</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/tf/SRManifestModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A161" href = "#A161">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;selectedCategory&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/tf/SRManifestModel.java.html#L69">69</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A162" href = "#A162">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;useManifest&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/tf/SRManifestModel.java.html#L71">71</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A163" href = "#A163">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;confirmed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/nbia-dcm4che-tools/dcm4jboss-web/src/java/org/dcm4chex/archive/web/maverick/tf/SRManifestModel.java.html#L72">72</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>ProxyTest xref</title>
+<link type="text/css" rel="stylesheet" href="../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="jdk/test/ProxyTest.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_comment">/*</em>
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_comment"> * Copyright (c) 2015, Oracle and/or its affiliates. All rights reserved.</em>
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_comment"> * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</em>
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_comment"> *</em>
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_comment"> * This code is free software; you can redistribute it and/or modify it</em>
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <em class="jxr_comment"> * under the terms of the GNU General Public License version 2 only, as</em>
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_comment"> * published by the Free Software Foundation.</em>
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_comment"> *</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_comment"> * This code is distributed in the hope that it will be useful, but WITHOUT</em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_comment"> * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_comment"> * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_comment"> * version 2 for more details (a copy is included in the LICENSE file that</em>
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <em class="jxr_comment"> * accompanied this code).</em>
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  <em class="jxr_comment"> *</em>
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <em class="jxr_comment"> * You should have received a copy of the GNU General Public License version</em>
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  <em class="jxr_comment"> * 2 along with this work; if not, write to the Free Software Foundation,</em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  <em class="jxr_comment"> * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <em class="jxr_comment"> *</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <em class="jxr_comment"> * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA</em>
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  <em class="jxr_comment"> * or visit www.oracle.com if you need additional information or have any</em>
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  <em class="jxr_comment"> * questions.</em>
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  <em class="jxr_comment"> */</em>
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  <strong class="jxr_keyword">package</strong> jdk.test;
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>  <strong class="jxr_keyword">import</strong> java.lang.reflect.Constructor;
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>  <strong class="jxr_keyword">import</strong> java.lang.reflect.InvocationHandler;
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>  <strong class="jxr_keyword">import</strong> java.lang.reflect.InvocationTargetException;
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  <strong class="jxr_keyword">import</strong> java.lang.reflect.Module;
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  <strong class="jxr_keyword">import</strong> java.lang.reflect.Proxy;
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>  <strong class="jxr_keyword">import</strong> java.util.Arrays;
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>  
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> ProxyTest {
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> Data {
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>          <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">int</strong> count = 0;
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>          <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> testcase;
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>          <strong class="jxr_keyword">final</strong> ClassLoader loader;
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>          <strong class="jxr_keyword">final</strong> Module module;
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>          <strong class="jxr_keyword">final</strong> Class&lt;?&gt;[] interfaces;
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>          <em class="jxr_comment">// Expected the proxy class in the specified module</em>
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>          <strong class="jxr_keyword">public</strong> Data(Module m, ClassLoader loader, Class&lt;?&gt;... interfaces) {
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>              <strong class="jxr_keyword">this</strong>.module = m;
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>              <strong class="jxr_keyword">this</strong>.loader = loader;
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>              <strong class="jxr_keyword">this</strong>.interfaces = interfaces;
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>              <strong class="jxr_keyword">this</strong>.testcase = ++count;
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>          }
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>          <em class="jxr_comment">// Expected the proxy class in a dynamic module</em>
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>          <strong class="jxr_keyword">public</strong> Data(ClassLoader loader, Class&lt;?&gt;... interfaces) {
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>              <strong class="jxr_keyword">this</strong>(<strong class="jxr_keyword">null</strong>, loader, interfaces);
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>          }
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>  
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>          @Override
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>          <strong class="jxr_keyword">public</strong> String toString() {
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>              String expected = module != <strong class="jxr_keyword">null</strong>
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>                      ? (module.isNamed() ? module.getName() : <span class="jxr_string">"unnamed"</span>)
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>                      : <span class="jxr_string">"dynamic"</span>;
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>              <strong class="jxr_keyword">return</strong> String.format(<span class="jxr_string">"%2d: Expected: %s %s loader: %s"</span>, testcase, expected,
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>                      Arrays.toString(interfaces), loader);
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>          }
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>      }
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>  
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> test(Data d) {
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>          System.out.println(d);
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>  
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>          <strong class="jxr_keyword">if</strong> (d.module != <strong class="jxr_keyword">null</strong>) {
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>              testProxyClass(d.module, d.loader, d.interfaces);
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>          } <strong class="jxr_keyword">else</strong> {
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>              testDynamicModule(d);
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>          }
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>      }
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>  
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> testDynamicModule(Data d) {
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>          Class&lt;?&gt; proxyClass = Proxy.getProxyClass(d.loader, d.interfaces);
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>          assertDynamicModule(proxyClass.getModule(), d.loader, proxyClass);
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>  
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>          Object proxy = Proxy.newProxyInstance(d.loader, d.interfaces, handler);
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>          assertDynamicModule(proxy.getClass().getModule(), d.loader, proxy.getClass());
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>      }
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>  
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">void</strong> testProxyClass(Module module, ClassLoader ld, Class&lt;?&gt;... interfaces) {
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>          Class&lt;?&gt; proxyClass = Proxy.getProxyClass(ld, interfaces);
+<a class="jxr_linenumber" name="L82" href="#L82">82</a>          assertEquals(proxyClass.getModule(), module);
+<a class="jxr_linenumber" name="L83" href="#L83">83</a>  
+<a class="jxr_linenumber" name="L84" href="#L84">84</a>          Object proxy = Proxy.newProxyInstance(ld, interfaces, handler);
+<a class="jxr_linenumber" name="L85" href="#L85">85</a>          assertEquals(proxy.getClass().getModule(), module);
+<a class="jxr_linenumber" name="L86" href="#L86">86</a>      }
+<a class="jxr_linenumber" name="L87" href="#L87">87</a>  
+<a class="jxr_linenumber" name="L88" href="#L88">88</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">void</strong> assertDynamicModule(Module m, ClassLoader ld, Class&lt;?&gt; proxyClass) {
+<a class="jxr_linenumber" name="L89" href="#L89">89</a>          <strong class="jxr_keyword">if</strong> (!m.isNamed() || !m.getName().startsWith(<span class="jxr_string">"jdk.proxy"</span>)) {
+<a class="jxr_linenumber" name="L90" href="#L90">90</a>              <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> RuntimeException(m.getName() + <span class="jxr_string">" not dynamic module"</span>);
+<a class="jxr_linenumber" name="L91" href="#L91">91</a>          }
+<a class="jxr_linenumber" name="L92" href="#L92">92</a>  
+<a class="jxr_linenumber" name="L93" href="#L93">93</a>          <strong class="jxr_keyword">if</strong> (ld != m.getClassLoader() || proxyClass.getClassLoader() != ld) {
+<a class="jxr_linenumber" name="L94" href="#L94">94</a>              <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> RuntimeException(<span class="jxr_string">"unexpected class loader"</span>);
+<a class="jxr_linenumber" name="L95" href="#L95">95</a>          }
+<a class="jxr_linenumber" name="L96" href="#L96">96</a>  
+<a class="jxr_linenumber" name="L97" href="#L97">97</a>          <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L98" href="#L98">98</a>              Constructor&lt;?&gt; cons = proxyClass.getConstructor(InvocationHandler.<strong class="jxr_keyword">class</strong>);
+<a class="jxr_linenumber" name="L99" href="#L99">99</a>              cons.newInstance(handler);
+<a class="jxr_linenumber" name="L100" href="#L100">100</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> RuntimeException(<span class="jxr_string">"Expected IllegalAccessException: "</span> + proxyClass);
+<a class="jxr_linenumber" name="L101" href="#L101">101</a>         } <strong class="jxr_keyword">catch</strong> (IllegalAccessException e) {
+<a class="jxr_linenumber" name="L102" href="#L102">102</a>             <em class="jxr_comment">// expected</em>
+<a class="jxr_linenumber" name="L103" href="#L103">103</a>         } <strong class="jxr_keyword">catch</strong> (NoSuchMethodException|InstantiationException|InvocationTargetException e) {
+<a class="jxr_linenumber" name="L104" href="#L104">104</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> RuntimeException(e);
+<a class="jxr_linenumber" name="L105" href="#L105">105</a>         }
+<a class="jxr_linenumber" name="L106" href="#L106">106</a>     }
+<a class="jxr_linenumber" name="L107" href="#L107">107</a> 
+<a class="jxr_linenumber" name="L108" href="#L108">108</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">void</strong> assertEquals(Object o1, Object o2) {
+<a class="jxr_linenumber" name="L109" href="#L109">109</a>         <strong class="jxr_keyword">if</strong> (o1 != o2) {
+<a class="jxr_linenumber" name="L110" href="#L110">110</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> RuntimeException(o1 + <span class="jxr_string">" != "</span> + o2);
+<a class="jxr_linenumber" name="L111" href="#L111">111</a>         }
+<a class="jxr_linenumber" name="L112" href="#L112">112</a>     }
+<a class="jxr_linenumber" name="L113" href="#L113">113</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">static</strong> InvocationHandler handler =
+<a class="jxr_linenumber" name="L114" href="#L114">114</a>         (proxy, m, params) -&gt; { <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> RuntimeException(m.toString()); };
+<a class="jxr_linenumber" name="L115" href="#L115">115</a> }
+</pre>
+<hr/>
+<div id="footer"></div>
+</body>
+</html>

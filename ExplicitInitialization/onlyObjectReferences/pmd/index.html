@@ -1,0 +1,1581 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">ExplicitInitialization</td>
+										<td class="b">
+											
+										</td>
+										
+										
+										<td class="a">
+											
+												onlyObjectReferences
+												
+													<li>true</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Unique rows</th>
+							
+								<th>Severity-warning</th>
+							
+								<th>Severity-error</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">1233</td>
+							<td id="totalBase">86</td>
+							
+								<td id="warningSeverityNumBase">85</td>
+							
+								<td id="errorSeverityNumBase">1</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">1233</td>
+							<td id="totalPatch">19</td>
+							
+								<td id="warningSeverityNumPatch">18</td>
+							
+								<td id="errorSeverityNumPatch">1</td>
+							
+						</tr>
+						<tr class="d">
+							<td>difference</td>
+							<td id="filesDiff">31</td>
+							<td id="totalDiff">67</td>
+							
+								<td id="warningSeverityNumDiff">67</td>
+							
+								<td id="errorSeverityNumDiff">0</td>
+							
+						<tr>
+					</table>
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">67</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Unique rows:">Unique rows:</h2>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A1" href = "#A1">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;reportShortNames&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java.html#L101">101</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A2" href = "#A2">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;showSuppressedViolations&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java.html#L103">103</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/RuleSetFactory.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A3" href = "#A3">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;warnDeprecated&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/RuleSetFactory.java.html#L51">51</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/ant/PMDTask.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A4" href = "#A4">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;maxRuleViolations&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/ant/PMDTask.java.html#L33">33</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A5" href = "#A5">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;maxRuleViolations&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java.html#L57">57</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A6" href = "#A6">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;debug&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java.html#L34">34</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A7" href = "#A7">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;help&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java.html#L37">37</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A8" href = "#A8">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;benchmark&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java.html#L46">46</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A9" href = "#A9">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;stress&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java.html#L49">49</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A10" href = "#A10">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;shortnames&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java.html#L52">52</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A11" href = "#A11">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;showsuppressed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java.html#L55">55</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cpd/AbstractTokenizer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A12" href = "#A12">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lineNumber&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cpd/AbstractTokenizer.java.html#L32">32</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cpd/CPDConfiguration.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A13" href = "#A13">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;skipLexicalErrors&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cpd/CPDConfiguration.java.html#L68">68</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A14" href = "#A14">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;noSkipBlocks&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cpd/CPDConfiguration.java.html#L71">71</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cpd/GridBagHelper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A15" href = "#A15">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;x&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cpd/GridBagHelper.java.html#L21">21</a></td>
+								
+									
+									<td>9</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A16" href = "#A16">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;y&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/cpd/GridBagHelper.java.html#L22">22</a></td>
+								
+									
+									<td>9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/dcd/UsageNodeVisitor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A17" href = "#A17">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;ignoreConstructorAllPrivate&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/dcd/UsageNodeVisitor.java.html#L34">34</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A18" href = "#A18">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;ignoreMethodAllOverride&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/dcd/UsageNodeVisitor.java.html#L38">38</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/dcd/asm/TypeSignatureVisitor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A19" href = "#A19">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;arrayDimensions&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/dcd/asm/TypeSignatureVisitor.java.html#L32">32</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/lang/rule/stat/StatisticalRuleHelper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A20" href = "#A20">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;count&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/lang/rule/stat/StatisticalRuleHelper.java.html#L34">34</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A21" href = "#A21">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;total&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/lang/rule/stat/StatisticalRuleHelper.java.html#L35">35</a></td>
+								
+									
+									<td>20</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/stat/Metric.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A22" href = "#A22">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;count&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/stat/Metric.java.html#L13">13</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A23" href = "#A23">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;total&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/stat/Metric.java.html#L14">14</a></td>
+								
+									
+									<td>20</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/util/designer/Designer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A24" href = "#A24">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;i&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/util/designer/Designer.java.html#L240">240</a></td>
+								
+									
+									<td>37</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A25" href = "#A25">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;i&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/main/java/net/sourceforge/pmd/util/designer/Designer.java.html#L315">315</a></td>
+								
+									
+									<td>37</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/test/java/net/sourceforge/pmd/cpd/CPDTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A26" href = "#A26">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;canTestSymLinks&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-core/src/test/java/net/sourceforge/pmd/cpd/CPDTest.java.html#L28">28</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/cpd/JavaTokenizer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A27" href = "#A27">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isAnnotation&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/cpd/JavaTokenizer.java.html#L94">94</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A28" href = "#A28">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;nextTokenEndsAnnotation&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/cpd/JavaTokenizer.java.html#L95">95</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A29" href = "#A29">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;annotationStack&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/cpd/JavaTokenizer.java.html#L96">96</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A30" href = "#A30">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;discardingSemicolon&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/cpd/JavaTokenizer.java.html#L98">98</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A31" href = "#A31">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;discardingKeywords&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/cpd/JavaTokenizer.java.html#L99">99</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A32" href = "#A32">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;discardingSuppressing&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/cpd/JavaTokenizer.java.html#L100">100</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A33" href = "#A33">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;discardingAnnotations&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/cpd/JavaTokenizer.java.html#L101">101</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A34" href = "#A34">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;ignoreAnnotations&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/cpd/JavaTokenizer.java.html#L102">102</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTCastExpression.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A35" href = "#A35">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;intersectionTypes&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/ast/ASTCastExpression.java.html#L9">9</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/basic/OverrideBothEqualsAndHashcodeRule.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A36" href = "#A36">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;implementsComparable&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/basic/OverrideBothEqualsAndHashcodeRule.java.html#L19">19</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A37" href = "#A37">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;containsEquals&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/basic/OverrideBothEqualsAndHashcodeRule.java.html#L21">21</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A38" href = "#A38">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;containsHashCode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/basic/OverrideBothEqualsAndHashcodeRule.java.html#L23">23</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ConstructorCallsOverridableMethodRule.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A39" href = "#A39">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;count&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ConstructorCallsOverridableMethodRule.java.html#L388">388</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/design/SwitchDensityRule.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A40" href = "#A40">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;labels&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/design/SwitchDensityRule.java.html#L27">27</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A41" href = "#A41">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;stmts&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/design/SwitchDensityRule.java.html#L28">28</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/typeresolution/ClassTypeResolver.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A42" href = "#A42">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;anonymousClassCounter&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/typeresolution/ClassTypeResolver.java.html#L134">134</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/typeresolution/rules/SignatureDeclareThrowsException.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A43" href = "#A43">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;junitImported&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/main/java/net/sourceforge/pmd/lang/java/typeresolution/rules/SignatureDeclareThrowsException.java.html#L38">38</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/PMDASMClassLoaderTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A44" href = "#A44">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;findClassCalls&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/PMDASMClassLoaderTest.java.html#L81">81</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A45" href = "#A45">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;boolean1&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java.html#L8">8</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A46" href = "#A46">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;byte1&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java.html#L11">11</a></td>
+								
+									
+									<td>14</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A47" href = "#A47">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;short1&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java.html#L14">14</a></td>
+								
+									
+									<td>15</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A48" href = "#A48">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;char1&#39; explicitly initialized to &#39;\0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java.html#L17">17</a></td>
+								
+									
+									<td>14</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A49" href = "#A49">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;int1&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java.html#L21">21</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A50" href = "#A50">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;long1&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java.html#L25">25</a></td>
+								
+									
+									<td>14</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A51" href = "#A51">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;long4&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java.html#L28">28</a></td>
+								
+									
+									<td>14</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A52" href = "#A52">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;float1&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java.html#L32">32</a></td>
+								
+									
+									<td>15</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A53" href = "#A53">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;double1&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-java/src/test/java/net/sourceforge/pmd/typeresolution/testdata/Literals.java.html#L37">37</a></td>
+								
+									
+									<td>16</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-jsp/src/test/java/net/sourceforge/pmd/lang/jsp/ast/OpenTagRegisterTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A54" href = "#A54">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;elmId&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-jsp/src/test/java/net/sourceforge/pmd/lang/jsp/ast/OpenTagRegisterTest.java.html#L13">13</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/ast/ASTMathNode.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A55" href = "#A55">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;strictMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/ast/ASTMathNode.java.html#L36">36</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/ast/ASTReference.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A56" href = "#A56">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;strictRef&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/ast/ASTReference.java.html#L41">41</a></td>
+								
+									
+									<td>20</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/ast/AbstractVmNode.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A57" href = "#A57">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;invalid&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/ast/AbstractVmNode.java.html#L45">45</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/ast/TemplateParseException.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A58" href = "#A58">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;specialConstructor&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/ast/TemplateParseException.java.html#L41">41</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/directive/Directive.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A59" href = "#A59">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;line&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/directive/Directive.java.html#L37">37</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A60" href = "#A60">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;column&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/directive/Directive.java.html#L38">38</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A61" href = "#A61">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;provideScope&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/directive/Directive.java.html#L39">39</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/directive/VelocimacroProxy.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A62" href = "#A62">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;numMacroArgs&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/directive/VelocimacroProxy.java.html#L33">33</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/util/VelocityCharStream.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A63" href = "#A63">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;column&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/util/VelocityCharStream.java.html#L53">53</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A64" href = "#A64">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prevCharIsCR&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/util/VelocityCharStream.java.html#L56">56</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A65" href = "#A65">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prevCharIsLF&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/util/VelocityCharStream.java.html#L57">57</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A66" href = "#A66">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;maxNextCharInd&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/util/VelocityCharStream.java.html#L62">62</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A67" href = "#A67">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;inBuf&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/pmd/pmd-vm/src/main/java/net/sourceforge/pmd/lang/vm/util/VelocityCharStream.java.html#L63">63</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

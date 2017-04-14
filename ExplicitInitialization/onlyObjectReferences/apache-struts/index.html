@@ -1,0 +1,4415 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">ExplicitInitialization</td>
+										<td class="b">
+											
+										</td>
+										
+										
+										<td class="a">
+											
+												onlyObjectReferences
+												
+													<li>true</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Unique rows</th>
+							
+								<th>Severity-warning</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">1931</td>
+							<td id="totalBase">386</td>
+							
+								<td id="warningSeverityNumBase">386</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">1931</td>
+							<td id="totalPatch">193</td>
+							
+								<td id="warningSeverityNumPatch">193</td>
+							
+						</tr>
+						<tr class="d">
+							<td>difference</td>
+							<td id="filesDiff">108</td>
+							<td id="totalDiff">193</td>
+							
+								<td id="warningSeverityNumDiff">193</td>
+							
+						<tr>
+					</table>
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">193</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Unique rows:">Unique rows:</h2>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/apps/showcase/src/main/java/org/apache/struts2/showcase/ajax/AjaxTestAction.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A1" href = "#A1">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;counter&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/apps/showcase/src/main/java/org/apache/struts2/showcase/ajax/AjaxTestAction.java.html#L30">30</a></td>
+								
+									
+									<td>28</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/DefaultActionInvocation.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A2" href = "#A2">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;executed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/DefaultActionInvocation.java.html#L64">64</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/config/ConfigurationManager.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A3" href = "#A3">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;providersChanged&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/config/ConfigurationManager.java.html#L47">47</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/config/entities/PackageConfig.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A4" href = "#A4">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isAbstract&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/config/entities/PackageConfig.java.html#L54">54</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/inject/ContainerBuilder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A5" href = "#A5">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;allowDuplicates&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/inject/ContainerBuilder.java.html#L47">47</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/AliasInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A6" href = "#A6">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;devMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/AliasInterceptor.java.html#L98">98</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ChainingInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A7" href = "#A7">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;copyMessages&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ChainingInterceptor.java.html#L120">120</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A8" href = "#A8">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;copyErrors&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ChainingInterceptor.java.html#L121">121</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A9" href = "#A9">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;copyFieldErrors&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ChainingInterceptor.java.html#L122">122</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ExceptionMappingInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A10" href = "#A10">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;logEnabled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ExceptionMappingInterceptor.java.html#L159">159</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ModelDrivenInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A11" href = "#A11">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;refreshModelBeforeResult&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ModelDrivenInterceptor.java.html#L78">78</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ParameterFilterInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A12" href = "#A12">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;defaultBlock&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ParameterFilterInterceptor.java.html#L106">106</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ParametersInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A13" href = "#A13">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;devMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ParametersInterceptor.java.html#L48">48</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A14" href = "#A14">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;ordered&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/ParametersInterceptor.java.html#L50">50</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/PrepareInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A15" href = "#A15">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;firstCallPrepareDo&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/PrepareInterceptor.java.html#L109">109</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/StaticParametersInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A16" href = "#A16">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;devMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/interceptor/StaticParametersInterceptor.java.html#L91">91</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/mock/MockInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A17" href = "#A17">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;executed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/mock/MockInterceptor.java.html#L36">36</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/ognl/OgnlUtil.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A18" href = "#A18">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;devMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/ognl/OgnlUtil.java.html#L56">56</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/ognl/accessor/CompoundRootAccessor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A19" href = "#A19">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;devMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/ognl/accessor/CompoundRootAccessor.java.html#L63">63</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/spring/SpringObjectFactory.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A20" href = "#A20">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;alwaysRespectAutowireStrategy&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/spring/SpringObjectFactory.java.html#L55">55</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A21" href = "#A21">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;enableAopSupport&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/spring/SpringObjectFactory.java.html#L60">60</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/spring/interceptor/ActionAutowiringInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A22" href = "#A22">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;initialized&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/spring/interceptor/ActionAutowiringInterceptor.java.html#L69">69</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/util/DefaultLocalizedTextProvider.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A23" href = "#A23">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;reloadBundles&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/util/DefaultLocalizedTextProvider.java.html#L103">103</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A24" href = "#A24">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;devMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/util/DefaultLocalizedTextProvider.java.html#L104">104</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/util/fs/DefaultFileManager.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A25" href = "#A25">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;reloadingConfigs&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/util/fs/DefaultFileManager.java.html#L42">42</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/validator/validators/RepopulateConversionErrorFieldValidatorSupport.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A26" href = "#A26">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;repopulateField&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/com/opensymphony/xwork2/validator/validators/RepopulateConversionErrorFieldValidatorSupport.java.html#L135">135</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Anchor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A27" href = "#A27">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;processingTagBody&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Anchor.java.html#L74">74</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Component.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A28" href = "#A28">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;devMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Component.java.html#L69">69</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Form.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A29" href = "#A29">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;sequence&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Form.java.html#L101">101</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/ListUIBean.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A30" href = "#A30">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;throwExceptionOnNullValueAttribute&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/ListUIBean.java.html#L61">61</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Property.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A31" href = "#A31">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;escapeJavaScript&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Property.java.html#L99">99</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A32" href = "#A32">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;escapeXml&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Property.java.html#L100">100</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A33" href = "#A33">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;escapeCsv&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/components/Property.java.html#L101">101</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/dispatcher/Dispatcher.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A34" href = "#A34">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;paramsWorkaroundEnabled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/dispatcher/Dispatcher.java.html#L140">140</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A35" href = "#A35">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;allowDynamicMethodCalls&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapper.java.html#L119">119</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A36" href = "#A36">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;allowSlashesInActionNames&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapper.java.html#L120">120</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A37" href = "#A37">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;alwaysSelectFullNamespace&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapper.java.html#L121">121</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A38" href = "#A38">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;allowActionPrefix&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapper.java.html#L129">129</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A39" href = "#A39">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;allowActionCrossNamespaceAccess&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapper.java.html#L130">130</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/interceptor/ExecuteAndWaitInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A40" href = "#A40">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;executeAfterValidationPass&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/interceptor/ExecuteAndWaitInterceptor.java.html#L188">188</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/interceptor/ScopeInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A41" href = "#A41">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;reset&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/interceptor/ScopeInterceptor.java.html#L159">159</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/interceptor/debugging/DebuggingInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A42" href = "#A42">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;enableXmlWithConsole&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/interceptor/debugging/DebuggingInterceptor.java.html#L116">116</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A43" href = "#A43">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;consoleEnabled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/interceptor/debugging/DebuggingInterceptor.java.html#L121">121</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/result/ServletRedirectResult.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A44" href = "#A44">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;suppressEmptyParameters&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/result/ServletRedirectResult.java.html#L110">110</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/Counter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A45" href = "#A45">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;wrap&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/Counter.java.html#L37">37</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/IteratorGenerator.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A46" href = "#A46">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;count&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/IteratorGenerator.java.html#L49">49</a></td>
+								
+									
+									<td>9</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A47" href = "#A47">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;currentCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/IteratorGenerator.java.html#L50">50</a></td>
+								
+									
+									<td>9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/MergeIteratorFilter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A48" href = "#A48">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;idx&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/MergeIteratorFilter.java.html#L44">44</a></td>
+								
+									
+									<td>9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/SubsetIteratorFilter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A49" href = "#A49">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;currentCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/SubsetIteratorFilter.java.html#L44">44</a></td>
+								
+									
+									<td>9</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A50" href = "#A50">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;start&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/SubsetIteratorFilter.java.html#L49">49</a></td>
+								
+									
+									<td>9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/TabbedPane.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A51" href = "#A51">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;selectedIndex&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/TabbedPane.java.html#L37">37</a></td>
+								
+									
+									<td>19</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/ByteChunk.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A52" href = "#A52">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;start&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/ByteChunk.java.html#L107">107</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A53" href = "#A53">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isSet&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/ByteChunk.java.html#L112">112</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/CharChunk.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A54" href = "#A54">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hashCode&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/CharChunk.java.html#L61">61</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A55" href = "#A55">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hasHashCode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/CharChunk.java.html#L63">63</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A56" href = "#A56">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isSet&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/CharChunk.java.html#L71">71</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/MessageBytes.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A57" href = "#A57">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hashCode&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/MessageBytes.java.html#L54">54</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A58" href = "#A58">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hasHashCode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/MessageBytes.java.html#L56">56</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A59" href = "#A59">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hasStrValue&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/MessageBytes.java.html#L66">66</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A60" href = "#A60">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hasLongValue&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/MessageBytes.java.html#L471">471</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/StringCache.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A61" href = "#A61">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;bcCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/StringCache.java.html#L76">76</a></td>
+								
+									
+									<td>26</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A62" href = "#A62">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;ccCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/StringCache.java.html#L95">95</a></td>
+								
+									
+									<td>26</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A63" href = "#A63">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;accessCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/StringCache.java.html#L107">107</a></td>
+								
+									
+									<td>26</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A64" href = "#A64">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hitCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/util/tomcat/buf/StringCache.java.html#L113">113</a></td>
+								
+									
+									<td>26</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/freemarker/FreemarkerManager.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A65" href = "#A65">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;contentTypeEvaluated&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/freemarker/FreemarkerManager.java.html#L138">138</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/freemarker/FreemarkerResult.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A66" href = "#A66">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;writeIfCompleted&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/freemarker/FreemarkerResult.java.html#L114">114</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/freemarker/tags/CallbackWriter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A67" href = "#A67">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;afterBody&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/freemarker/tags/CallbackWriter.java.html#L39">39</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/jsp/IteratorStatus.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A68" href = "#A68">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;last&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/jsp/IteratorStatus.java.html#L88">88</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A69" href = "#A69">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;index&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/jsp/IteratorStatus.java.html#L89">89</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/jsp/PropertyTag.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A70" href = "#A70">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;escapeJavaScript&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/jsp/PropertyTag.java.html#L43">43</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A71" href = "#A71">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;escapeXml&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/jsp/PropertyTag.java.html#L44">44</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A72" href = "#A72">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;escapeCsv&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/main/java/org/apache/struts2/views/jsp/PropertyTag.java.html#L45">45</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/TestInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A73" href = "#A73">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;executed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/TestInterceptor.java.html#L35">35</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/TestNGXWorkTestCaseTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A74" href = "#A74">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;ran&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/TestNGXWorkTestCaseTest.java.html#L45">45</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/config/ConfigurationManagerTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A75" href = "#A75">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isDestroyed1&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/config/ConfigurationManagerTest.java.html#L72">72</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A76" href = "#A76">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isDestroyed2&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/config/ConfigurationManagerTest.java.html#L73">73</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/config/ConfigurationTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A77" href = "#A77">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;called&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/config/ConfigurationTest.java.html#L256">256</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/conversion/impl/XWorkConverterTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A78" href = "#A78">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;done&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/conversion/impl/XWorkConverterTest.java.html#L391">391</a></td>
+								
+									
+									<td>37</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/interceptor/PrefixMethodInvocationUtilTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A79" href = "#A79">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prepareSaveInvoked&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/interceptor/PrefixMethodInvocationUtilTest.java.html#L241">241</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A80" href = "#A80">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prepareDoSaveInvoked&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/interceptor/PrefixMethodInvocationUtilTest.java.html#L242">242</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A81" href = "#A81">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prepareSubmitInvoked&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/interceptor/PrefixMethodInvocationUtilTest.java.html#L243">243</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A82" href = "#A82">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prepareDoCancelInvoked&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/interceptor/PrefixMethodInvocationUtilTest.java.html#L244">244</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/spring/SpringObjectFactoryTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A83" href = "#A83">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;applicationContextSet&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/spring/SpringObjectFactoryTest.java.html#L169">169</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/spring/SpringResult.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A84" href = "#A84">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;initialize&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/spring/SpringResult.java.html#L10">10</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/validator/RepopulateConversionErrorFieldValidatorSupportTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A85" href = "#A85">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;doValidateGetsCalled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/com/opensymphony/xwork2/validator/RepopulateConversionErrorFieldValidatorSupportTest.java.html#L125">125</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/ExecutionCountTestAction.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A86" href = "#A86">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;executionCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/ExecutionCountTestAction.java.html#L40">40</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/dispatcher/DispatcherTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A87" href = "#A87">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;destroyConfiguration&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/dispatcher/DispatcherTest.java.html#L261">261</a></td>
+								
+									
+									<td>24</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A88" href = "#A88">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isInitialized&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/dispatcher/DispatcherTest.java.html#L276">276</a></td>
+								
+									
+									<td>24</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A89" href = "#A89">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isDestroyed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/dispatcher/DispatcherTest.java.html#L277">277</a></td>
+								
+									
+									<td>24</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A90" href = "#A90">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;destroyed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/dispatcher/DispatcherTest.java.html#L281">281</a></td>
+								
+									
+									<td>24</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/result/StreamResultTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A91" href = "#A91">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;contentLength&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/result/StreamResultTest.java.html#L50">50</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/util/StrutsTypeConverterTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A92" href = "#A92">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isConvertFromString&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/util/StrutsTypeConverterTest.java.html#L86">86</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A93" href = "#A93">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isConvertToString&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/util/StrutsTypeConverterTest.java.html#L87">87</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A94" href = "#A94">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;fallbackConversion&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/util/StrutsTypeConverterTest.java.html#L88">88</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/util/StrutsUtilTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A95" href = "#A95">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;included&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/util/StrutsUtilTest.java.html#L231">231</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/views/freemarker/tags/TagModelTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A96" href = "#A96">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;property1&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/views/freemarker/tags/TagModelTest.java.html#L322">322</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/views/jsp/ui/ActionErrorTagTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A97" href = "#A97">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;shouldActionHaveError&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/views/jsp/ui/ActionErrorTagTest.java.html#L42">42</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/views/jsp/ui/FieldErrorTagTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A98" href = "#A98">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;haveFieldErrors&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/views/jsp/ui/FieldErrorTagTest.java.html#L253">253</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A99" href = "#A99">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;returnNullForFieldErrors&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/core/src/test/java/org/apache/struts2/views/jsp/ui/FieldErrorTagTest.java.html#L254">254</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/bean-validation/src/main/java/org/apache/struts/beanvalidation/validation/interceptor/BeanValidationInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A100" href = "#A100">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;convertToUtf8&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/bean-validation/src/main/java/org/apache/struts/beanvalidation/validation/interceptor/BeanValidationInterceptor.java.html#L62">62</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/config-browser/src/main/java/org/apache/struts2/config_browser/ShowValidatorAction.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A101" href = "#A101">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;selected&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/config-browser/src/main/java/org/apache/struts2/config_browser/ShowValidatorAction.java.html#L51">51</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/convention/src/main/java/org/apache/struts2/convention/PackageBasedActionConfigBuilder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A102" href = "#A102">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;disableActionScanning&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/convention/src/main/java/org/apache/struts2/convention/PackageBasedActionConfigBuilder.java.html#L76">76</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A103" href = "#A103">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;disablePackageLocatorsScanning&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/convention/src/main/java/org/apache/struts2/convention/PackageBasedActionConfigBuilder.java.html#L77">77</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A104" href = "#A104">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;mapAllMatches&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/convention/src/main/java/org/apache/struts2/convention/PackageBasedActionConfigBuilder.java.html#L80">80</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A105" href = "#A105">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;eagerLoading&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/convention/src/main/java/org/apache/struts2/convention/PackageBasedActionConfigBuilder.java.html#L91">91</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/ELParser.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A106" href = "#A106">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;jj_rescan&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/ELParser.java.html#L2124">2124</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A107" href = "#A107">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;jj_gc&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/ELParser.java.html#L2125">2125</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/ELParserTokenManager.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A108" href = "#A108">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;curLexState&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/ELParserTokenManager.java.html#L1217">1217</a></td>
+								
+									
+									<td>9</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A109" href = "#A109">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;defaultLexState&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/ELParserTokenManager.java.html#L1218">1218</a></td>
+								
+									
+									<td>9</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/SimpleCharStream.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A110" href = "#A110">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;column&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/SimpleCharStream.java.html#L25">25</a></td>
+								
+									
+									<td>19</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A111" href = "#A111">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prevCharIsCR&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/SimpleCharStream.java.html#L28">28</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A112" href = "#A112">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prevCharIsLF&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/SimpleCharStream.java.html#L29">29</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A113" href = "#A113">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;maxNextCharInd&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/SimpleCharStream.java.html#L34">34</a></td>
+								
+									
+									<td>19</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A114" href = "#A114">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;inBuf&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/el/parser/SimpleCharStream.java.html#L35">35</a></td>
+								
+									
+									<td>19</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/EmbeddedServletOptions.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A115" href = "#A115">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;trimSpaces&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/EmbeddedServletOptions.java.html#L66">66</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A116" href = "#A116">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;checkInterval&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/EmbeddedServletOptions.java.html#L88">88</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A117" href = "#A117">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isSmapSuppressed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/EmbeddedServletOptions.java.html#L93">93</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A118" href = "#A118">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isSmapDumped&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/EmbeddedServletOptions.java.html#L98">98</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A119" href = "#A119">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;genStringAsCharArray&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/EmbeddedServletOptions.java.html#L103">103</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A120" href = "#A120">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;trimSpaces&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L133">133</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A121" href = "#A121">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;genStringAsCharArray&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L134">134</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A122" href = "#A122">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;mappedFile&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L136">136</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A123" href = "#A123">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;helpNeeded&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L145">145</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A124" href = "#A124">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;compile&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L146">146</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A125" href = "#A125">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;smapDumped&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L148">148</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A126" href = "#A126">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;addWebXmlMappings&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L191">191</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A127" href = "#A127">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;verbose&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L216">216</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A128" href = "#A128">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;listErrors&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L217">217</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A129" href = "#A129">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;showSuccess&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L218">218</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A130" href = "#A130">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;fullstop&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspC.java.html#L220">220</a></td>
+								
+									
+									<td>23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspCompilationContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A131" href = "#A131">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;removed&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/JspCompilationContext.java.html#L86">86</a></td>
+								
+									
+									<td>19</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Collector.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A132" href = "#A132">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;scriptingElementSeen&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Collector.java.html#L38">38</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A133" href = "#A133">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;usebeanSeen&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Collector.java.html#L39">39</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A134" href = "#A134">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;includeActionSeen&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Collector.java.html#L40">40</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A135" href = "#A135">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;paramActionSeen&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Collector.java.html#L41">41</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A136" href = "#A136">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;setPropertySeen&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Collector.java.html#L42">42</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A137" href = "#A137">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hasScriptingVars&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Collector.java.html#L43">43</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Dumper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A138" href = "#A138">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;indent&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Dumper.java.html#L26">26</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/ELFunctionMapper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A139" href = "#A139">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;currFunc&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/ELFunctionMapper.java.html#L34">34</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/ErrorDispatcher.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A140" href = "#A140">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;jspcMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/ErrorDispatcher.java.html#L55">55</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Generator.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A141" href = "#A141">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;getServletInfoGenerated&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Generator.java.html#L186">186</a></td>
+								
+									
+									<td>29</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A142" href = "#A142">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;used&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Generator.java.html#L4028">4028</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/JspConfig.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A143" href = "#A143">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;initialized&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/JspConfig.java.html#L51">51</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/JspDocumentParser.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A144" href = "#A144">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;tagDependentNesting&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/JspDocumentParser.java.html#L109">109</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A145" href = "#A145">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;tagDependentPending&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/JspDocumentParser.java.html#L112">112</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/JspUtil.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A146" href = "#A146">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;tempSequenceNumber&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/JspUtil.java.html#L57">57</a></td>
+								
+									
+									<td>24</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Node.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A147" href = "#A147">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;tempSequenceNumber&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Node.java.html#L476">476</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageDataImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A148" href = "#A148">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;resetDefaultNS&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageDataImpl.java.html#L240">240</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageInfo.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A149" href = "#A149">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isErrorPage&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageInfo.java.html#L64">64</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A150" href = "#A150">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;scriptless&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageInfo.java.html#L68">68</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A151" href = "#A151">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;scriptingInvalid&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageInfo.java.html#L69">69</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A152" href = "#A152">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isELIgnored&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageInfo.java.html#L72">72</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A153" href = "#A153">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;deferredSyntaxAllowedAsLiteral&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageInfo.java.html#L76">76</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A154" href = "#A154">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;trimDirectiveWhitespaces&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageInfo.java.html#L79">79</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A155" href = "#A155">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hasJspRoot&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/PageInfo.java.html#L91">91</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/ServletWriter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A156" href = "#A156">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;indent&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/ServletWriter.java.html#L33">33</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A157" href = "#A157">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;virtual_indent&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/ServletWriter.java.html#L34">34</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/SmapStratum.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A158" href = "#A158">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lineFileID&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/SmapStratum.java.html#L42">42</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A159" href = "#A159">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lineFileIDSet&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/SmapStratum.java.html#L45">45</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/SmapUtil.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A160" href = "#A160">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;origPos&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/SmapUtil.java.html#L202">202</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A161" href = "#A161">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;genPos&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/SmapUtil.java.html#L203">203</a></td>
+								
+									
+									<td>13</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/TagPluginManager.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A162" href = "#A162">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;initialized&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/TagPluginManager.java.html#L40">40</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/TextOptimizer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A163" href = "#A163">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;textNodeCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/TextOptimizer.java.html#L33">33</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Validator.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A164" href = "#A164">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;pageEncodingSeen&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/compiler/Validator.java.html#L83">83</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/runtime/JspApplicationContextImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A165" href = "#A165">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;instantiated&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/runtime/JspApplicationContextImpl.java.html#L57">57</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/runtime/JspWriterImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A166" href = "#A166">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;flushed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/runtime/JspWriterImpl.java.html#L51">51</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A167" href = "#A167">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;closed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/runtime/JspWriterImpl.java.html#L52">52</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/servlet/JspServletWrapper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A168" href = "#A168">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;available&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/servlet/JspServletWrapper.java.html#L74">74</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A169" href = "#A169">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lastModificationTest&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/servlet/JspServletWrapper.java.html#L83">83</a></td>
+								
+									
+									<td>18</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/xmlparser/ParserUtils.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A170" href = "#A170">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;validating&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/xmlparser/ParserUtils.java.html#L67">67</a></td>
+								
+									
+									<td>27</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/xmlparser/XMLEncodingDetector.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A171" href = "#A171">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;mayReadChunks&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/xmlparser/XMLEncodingDetector.java.html#L62">62</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A172" href = "#A172">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;fMarkupDepth&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/embeddedjsp/src/main/java/org/apache/struts2/jasper/xmlparser/XMLEncodingDetector.java.html#L73">73</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/gxp/src/main/java/org/apache/struts2/views/gxp/AbstractGxpResult.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A173" href = "#A173">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;useInstances&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/gxp/src/main/java/org/apache/struts2/views/gxp/AbstractGxpResult.java.html#L73">73</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/gxp/src/main/java/org/apache/struts2/views/gxp/GxpResult.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A174" href = "#A174">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;outputXml&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/gxp/src/main/java/org/apache/struts2/views/gxp/GxpResult.java.html#L76">76</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/jfreechart/src/test/java/org/apache/struts2/dispatcher/ChartResultTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A175" href = "#A175">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;written&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/jfreechart/src/test/java/org/apache/struts2/dispatcher/ChartResultTest.java.html#L187">187</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONCleaner.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A176" href = "#A176">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;defaultBlock&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONCleaner.java.html#L57">57</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONInterceptor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A177" href = "#A177">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;enableSMD&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONInterceptor.java.html#L57">57</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A178" href = "#A178">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;enableGZIP&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONInterceptor.java.html#L58">58</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A179" href = "#A179">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;debug&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONInterceptor.java.html#L69">69</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A180" href = "#A180">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;noCache&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONInterceptor.java.html#L70">70</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONResult.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A181" href = "#A181">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;enableSMD&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONResult.java.html#L89">89</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A182" href = "#A182">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;enableGZIP&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONResult.java.html#L90">90</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A183" href = "#A183">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;noCache&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONResult.java.html#L94">94</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A184" href = "#A184">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;excludeNullProperties&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONResult.java.html#L96">96</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A185" href = "#A185">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;devMode&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/main/java/org/apache/struts2/json/JSONResult.java.html#L104">104</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/test/java/org/apache/struts2/json/JSONValidationInterceptorTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A186" href = "#A186">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;executed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/json/src/test/java/org/apache/struts2/json/JSONValidationInterceptorTest.java.html#L216">216</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/osgi/src/main/java/org/apache/struts2/osgi/OsgiConfigurationProvider.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A187" href = "#A187">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;bundlesChanged&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/osgi/src/main/java/org/apache/struts2/osgi/OsgiConfigurationProvider.java.html#L65">65</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/plexus/src/main/java/org/apache/struts2/plexus/PlexusFilter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A188" href = "#A188">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;loaded&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/plexus/src/main/java/org/apache/struts2/plexus/PlexusFilter.java.html#L49">49</a></td>
+								
+									
+									<td>28</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/plexus/src/main/java/org/apache/struts2/plexus/PlexusLifecycleListener.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A189" href = "#A189">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;loaded&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/plexus/src/main/java/org/apache/struts2/plexus/PlexusLifecycleListener.java.html#L45">45</a></td>
+								
+									
+									<td>28</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/rest/src/main/java/org/apache/struts2/rest/DefaultHttpHeaders.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A190" href = "#A190">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;noETag&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/rest/src/main/java/org/apache/struts2/rest/DefaultHttpHeaders.java.html#L43">43</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/rest/src/main/java/org/apache/struts2/rest/RestActionMapper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A191" href = "#A191">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;allowDynamicMethodCalls&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/rest/src/main/java/org/apache/struts2/rest/RestActionMapper.java.html#L121">121</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/sitegraph/src/main/java/org/apache/struts2/sitegraph/StrutsConfigRetriever.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A192" href = "#A192">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isXWorkStarted&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/sitegraph/src/main/java/org/apache/struts2/sitegraph/StrutsConfigRetriever.java.html#L55">55</a></td>
+								
+									
+									<td>28</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/testng/src/test/java/org/apache/struts2/TestNGStrutsTestCaseTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A193" href = "#A193">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;ran&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/apache-struts/plugins/testng/src/test/java/org/apache/struts2/TestNGStrutsTestCaseTest.java.html#L54">54</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

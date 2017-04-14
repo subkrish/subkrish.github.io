@@ -1,0 +1,2147 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">ExplicitInitialization</td>
+										<td class="b">
+											
+										</td>
+										
+										
+										<td class="a">
+											
+												onlyObjectReferences
+												
+													<li>true</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Unique rows</th>
+							
+								<th>Severity-warning</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">2016</td>
+							<td id="totalBase">128</td>
+							
+								<td id="warningSeverityNumBase">128</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">2016</td>
+							<td id="totalPatch">44</td>
+							
+								<td id="warningSeverityNumPatch">44</td>
+							
+						</tr>
+						<tr class="d">
+							<td>difference</td>
+							<td id="filesDiff">55</td>
+							<td id="totalDiff">84</td>
+							
+								<td id="warningSeverityNumDiff">84</td>
+							
+						<tr>
+					</table>
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">84</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Unique rows:">Unique rows:</h2>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/backends/jgroups/src/test/java/org/hibernate/search/backend/jgroups/impl/JGroupsReceivingMockBackend.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A1" href = "#A1">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;failOnMessage&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/backends/jgroups/src/test/java/org/hibernate/search/backend/jgroups/impl/JGroupsReceivingMockBackend.java.html#L32">32</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A2" href = "#A2">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;receivedAnything&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/backends/jgroups/src/test/java/org/hibernate/search/backend/jgroups/impl/JGroupsReceivingMockBackend.java.html#L33">33</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/main/java/org/hibernate/search/elasticsearch/client/impl/BackendRequestProcessor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A3" href = "#A3">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;size&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/main/java/org/hibernate/search/elasticsearch/client/impl/BackendRequestProcessor.java.html#L304">304</a></td>
+								
+									
+									<td>29</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/main/java/org/hibernate/search/elasticsearch/client/impl/BulkRequest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A4" href = "#A4">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;documentsAdded&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/main/java/org/hibernate/search/elasticsearch/client/impl/BulkRequest.java.html#L194">194</a></td>
+								
+									
+									<td>30</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/main/java/org/hibernate/search/elasticsearch/impl/ElasticsearchIndexManager.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A5" href = "#A5">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;indexInitialized&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/main/java/org/hibernate/search/elasticsearch/impl/ElasticsearchIndexManager.java.html#L90">90</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A6" href = "#A6">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;indexCreatedByHibernateSearch&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/main/java/org/hibernate/search/elasticsearch/impl/ElasticsearchIndexManager.java.html#L91">91</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/main/java/org/hibernate/search/elasticsearch/util/impl/PathComponentExtractor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A7" href = "#A7">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;currentIndexInPath&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/main/java/org/hibernate/search/elasticsearch/util/impl/PathComponentExtractor.java.html#L25">25</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/test/java/org/hibernate/search/elasticsearch/test/ElasticsearchSchemaNamingErrorsIT.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A8" href = "#A8">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;nonConflictingField&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/test/java/org/hibernate/search/elasticsearch/test/ElasticsearchSchemaNamingErrorsIT.java.html#L223">223</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A9" href = "#A9">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;conflictingField&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/elasticsearch/src/test/java/org/hibernate/search/elasticsearch/test/ElasticsearchSchemaNamingErrorsIT.java.html#L229">229</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/Changeset.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A10" href = "#A10">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;processed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/Changeset.java.html#L26">26</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/NRTWorkspaceImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A11" href = "#A11">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;shutdown&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/NRTWorkspaceImpl.java.html#L86">86</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A12" href = "#A12">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;readerGenRequiringFlushDeletes&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/NRTWorkspaceImpl.java.html#L111">111</a></td>
+								
+									
+									<td>22</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A13" href = "#A13">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;readerGenRequiringFlushWrites&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/NRTWorkspaceImpl.java.html#L117">117</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A14" href = "#A14">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;currentReaderGen&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/NRTWorkspaceImpl.java.html#L122">122</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/SharedIndexCommitPolicy.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A15" href = "#A15">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;openWriterUsers&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/SharedIndexCommitPolicy.java.html#L20">20</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A16" href = "#A16">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;lastExitCloses&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/SharedIndexCommitPolicy.java.html#L21">21</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/SyncWorkProcessor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A17" href = "#A17">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;stop&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/backend/impl/lucene/SyncWorkProcessor.java.html#L47">47</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/impl/LuceneOptionsImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A18" href = "#A18">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;documentBoostApplied&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/impl/LuceneOptionsImpl.java.html#L52">52</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/impl/WorkPlan.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A19" href = "#A19">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;approximateWorkQueueSize&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/impl/WorkPlan.java.html#L64">64</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A20" href = "#A20">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;purgeAll&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/impl/WorkPlan.java.html#L177">177</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A21" href = "#A21">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;delete&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/impl/WorkPlan.java.html#L384">384</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A22" href = "#A22">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;add&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/impl/WorkPlan.java.html#L390">390</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A23" href = "#A23">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;containedInProcessed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/impl/WorkPlan.java.html#L396">396</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/metadata/impl/BackReference.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A24" href = "#A24">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;initialized&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/metadata/impl/BackReference.java.html#L34">34</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/metadata/impl/ParseContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A25" href = "#A25">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;level&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/metadata/impl/ParseContext.java.html#L28">28</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A26" href = "#A26">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;explicitDocumentId&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/metadata/impl/ParseContext.java.html#L30">30</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A27" href = "#A27">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;includeEmbeddedObjectId&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/metadata/impl/ParseContext.java.html#L32">32</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/service/impl/StandardServiceManager.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A28" href = "#A28">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;allServicesReleased&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/service/impl/StandardServiceManager.java.html#L51">51</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A29" href = "#A29">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;userCounter&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/service/impl/StandardServiceManager.java.html#L231">231</a></td>
+								
+									
+									<td>29</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/spi/DocumentBuilderIndexedEntity.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A30" href = "#A30">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;allowFieldSelectionInProjection&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/engine/spi/DocumentBuilderIndexedEntity.java.html#L125">125</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/indexes/impl/SharingBufferReaderProvider.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A31" href = "#A31">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;refreshOperationId&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/indexes/impl/SharingBufferReaderProvider.java.html#L59">59</a></td>
+								
+									
+									<td>30</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/ConnectedPhraseMatchingContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A32" href = "#A32">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;firstOfContext&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/ConnectedPhraseMatchingContext.java.html#L26">26</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/ConnectedRangeMatchingContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A33" href = "#A33">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;firstOfContext&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/ConnectedRangeMatchingContext.java.html#L27">27</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/FacetBuildingContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A34" href = "#A34">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;includeZeroCount&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/FacetBuildingContext.java.html#L48">48</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A35" href = "#A35">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;isRangeQuery&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/FacetBuildingContext.java.html#L49">49</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/FacetingRequestImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A36" href = "#A36">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;includeZeroCounts&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/FacetingRequestImpl.java.html#L38">38</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/MoreLikeThisQueryContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A37" href = "#A37">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;boostTerms&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/MoreLikeThisQueryContext.java.html#L14">14</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/PhraseQueryContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A38" href = "#A38">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;slop&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/PhraseQueryContext.java.html#L14">14</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/RemoteMatchQuery.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A39" href = "#A39">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;maxEditDistance&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/RemoteMatchQuery.java.html#L23">23</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A40" href = "#A40">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;maxEditDistance&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/RemoteMatchQuery.java.html#L30">30</a></td>
+								
+									
+									<td>29</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/TermQueryContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A41" href = "#A41">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;prefixLength&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/dsl/impl/TermQueryContext.java.html#L25">25</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/engine/impl/TimeoutManagerImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A42" href = "#A42">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;timedOut&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/query/engine/impl/TimeoutManagerImpl.java.html#L24">24</a></td>
+								
+									
+									<td>17</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/spatial/impl/DistanceCollector.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A43" href = "#A43">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;currentIterator&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/spatial/impl/DistanceCollector.java.html#L115">115</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/store/impl/FSSlaveDirectoryProvider.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A44" href = "#A44">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;initialized&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/store/impl/FSSlaveDirectoryProvider.java.html#L53">53</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A45" href = "#A45">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;started&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/store/impl/FSSlaveDirectoryProvider.java.html#L54">54</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/store/optimization/impl/IncrementalOptimizerStrategy.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A46" href = "#A46">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;operations&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/store/optimization/impl/IncrementalOptimizerStrategy.java.html#L31">31</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A47" href = "#A47">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transactions&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/store/optimization/impl/IncrementalOptimizerStrategy.java.html#L32">32</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A48" href = "#A48">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;optimizationsPerformed&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/store/optimization/impl/IncrementalOptimizerStrategy.java.html#L33">33</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/util/impl/CollectionHelper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A49" href = "#A49">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;current&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/main/java/org/hibernate/search/util/impl/CollectionHelper.java.html#L163">163</a></td>
+								
+									
+									<td>29</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/test/backend/lucene/ScheduledCommitPolicyTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A50" href = "#A50">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;globalIdCounter&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/test/backend/lucene/ScheduledCommitPolicyTest.java.html#L45">45</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/test/bridge/builtin/TikaBridgeTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A51" href = "#A51">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;invocationCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/test/bridge/builtin/TikaBridgeTest.java.html#L158">158</a></td>
+								
+									
+									<td>35</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A52" href = "#A52">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;invocationCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/test/bridge/builtin/TikaBridgeTest.java.html#L183">183</a></td>
+								
+									
+									<td>35</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/BytemanHelper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A53" href = "#A53">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;runningAsJUnitRule&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/BytemanHelper.java.html#L85">85</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/junit/SearchFactoryHolder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A54" href = "#A54">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;idProvidedImplicit&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/junit/SearchFactoryHolder.java.html#L49">49</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A55" href = "#A55">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;multitenancyEnabled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/junit/SearchFactoryHolder.java.html#L50">50</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A56" href = "#A56">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;enableJPAAnnotationsProcessing&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/junit/SearchFactoryHolder.java.html#L51">51</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/setup/SearchConfigurationForTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A57" href = "#A57">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;deleteByTermEnforced&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/setup/SearchConfigurationForTest.java.html#L39">39</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A58" href = "#A58">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;idProvidedImplicit&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/setup/SearchConfigurationForTest.java.html#L40">40</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A59" href = "#A59">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;multitenancyEnabled&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/engine/src/test/java/org/hibernate/search/testsupport/setup/SearchConfigurationForTest.java.html#L41">41</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/integrationtest/narayana/src/test/java/org/hibernate/search/test/integration/jbossjta/infra/JBossTADataSourceBuilder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A60" href = "#A60">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;timeout&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/integrationtest/narayana/src/test/java/org/hibernate/search/test/integration/jbossjta/infra/JBossTADataSourceBuilder.java.html#L20">20</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/integrationtest/sandbox/src/test/java/org/hibernate/search/test/performance/reader/IndexFillRunnable.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A61" href = "#A61">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;jobSeed&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/integrationtest/sandbox/src/test/java/org/hibernate/search/test/performance/reader/IndexFillRunnable.java.html#L22">22</a></td>
+								
+									
+									<td>30</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/integrationtest/wildfly/src/test/java/org/hibernate/search/test/integration/wildfly/massindexing/Concert.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A62" href = "#A62">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;SLOW_DOWN&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/integrationtest/wildfly/src/test/java/org/hibernate/search/test/integration/wildfly/massindexing/Concert.java.html#L31">31</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/main/java/org/hibernate/search/backend/impl/EventSourceTransactionContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A63" href = "#A63">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;realTxInProgress&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/main/java/org/hibernate/search/backend/impl/EventSourceTransactionContext.java.html#L51">51</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A64" href = "#A64">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;realTxInProgressInitialized&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/main/java/org/hibernate/search/backend/impl/EventSourceTransactionContext.java.html#L52">52</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/main/java/org/hibernate/search/batchindexing/impl/MassIndexerImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A65" href = "#A65">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;objectsLimit&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/main/java/org/hibernate/search/batchindexing/impl/MassIndexerImpl.java.html#L47">47</a></td>
+								
+									
+									<td>22</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/main/java/org/hibernate/search/query/hibernate/impl/IteratorImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A66" href = "#A66">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;index&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/main/java/org/hibernate/search/query/hibernate/impl/IteratorImpl.java.html#L22">22</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/main/java/org/hibernate/search/query/hibernate/impl/ScrollableResultsImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A67" href = "#A67">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;closed&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/main/java/org/hibernate/search/query/hibernate/impl/ScrollableResultsImpl.java.html#L77">77</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/analyzer/StreamWrappingTokenizer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A68" href = "#A68">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;position&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/analyzer/StreamWrappingTokenizer.java.html#L27">27</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/batchindexing/CustomMassIndexerFactoryTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A69" href = "#A69">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;configurationReadable&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/batchindexing/CustomMassIndexerFactoryTest.java.html#L65">65</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/batchindexing/IndexingGeneratedCorpusTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A70" href = "#A70">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;finished&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/batchindexing/IndexingGeneratedCorpusTest.java.html#L269">269</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/directoryProvider/CloseCheckingDirectoryProvider.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A71" href = "#A71">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;initialized&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/directoryProvider/CloseCheckingDirectoryProvider.java.html#L26">26</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A72" href = "#A72">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;stopped&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/directoryProvider/CloseCheckingDirectoryProvider.java.html#L27">27</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A73" href = "#A73">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;started&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/directoryProvider/CloseCheckingDirectoryProvider.java.html#L28">28</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/engine/BusStop.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A74" href = "#A74">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;numMethodCalls&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/engine/BusStop.java.html#L36">36</a></td>
+								
+									
+									<td>31</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/engine/optimizations/CollectionUpdateEventTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A75" href = "#A75">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;WITHOUT_CLASS_BRIDGE_ON_ITEM&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/engine/optimizations/CollectionUpdateEventTest.java.html#L40">40</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A76" href = "#A76">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;WITHOUT_CLASS_BRIDGE_ON_CATALOG&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/engine/optimizations/CollectionUpdateEventTest.java.html#L43">43</a></td>
+								
+									
+									<td>32</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/filter/InstanceBasedExcludeAllFilter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A77" href = "#A77">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;constructorCount&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/filter/InstanceBasedExcludeAllFilter.java.html#L26">26</a></td>
+								
+									
+									<td>37</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/query/CounterCallsProjectionToMapResultTransformer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A78" href = "#A78">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transformTupleCounter&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/query/CounterCallsProjectionToMapResultTransformer.java.html#L18">18</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A79" href = "#A79">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;transformListCounter&#39; explicitly initialized to &#39;0&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/query/CounterCallsProjectionToMapResultTransformer.java.html#L19">19</a></td>
+								
+									
+									<td>21</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/query/criteria/AbstractCar.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A80" href = "#A80">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hasColor&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/query/criteria/AbstractCar.java.html#L33">33</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/query/criteria/Bike.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A81" href = "#A81">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;hasColor&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/query/criteria/Bike.java.html#L25">25</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/util/FullTextSessionBuilder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A82" href = "#A82">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;usingFileSystem&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/orm/src/test/java/org/hibernate/search/test/util/FullTextSessionBuilder.java.html#L60">60</a></td>
+								
+									
+									<td>25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/serialization/avro/src/main/java/org/hibernate/search/indexes/serialization/avro/impl/KnownProtocols.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A83" href = "#A83">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;warned&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/serialization/avro/src/main/java/org/hibernate/search/indexes/serialization/avro/impl/KnownProtocols.java.html#L37">37</a></td>
+								
+									
+									<td>34</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/serialization/avro/src/test/java/org/hibernate/search/test/util/SerializationTestHelper.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A84" href = "#A84">#</a></td>
+								<td>warning</td>
+								<td>ExplicitInitialization</td>
+								<td>Variable &#39;read&#39; explicitly initialized to &#39;false&#39; (default value for its type).</td>
+								<td><a href = "xref/Users/subbudantu/contribution/checkstyle-tester/repositories/hibernate-search/serialization/avro/src/test/java/org/hibernate/search/test/util/SerializationTestHelper.java.html#L298">298</a></td>
+								
+									
+									<td>33</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

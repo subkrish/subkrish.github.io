@@ -1,0 +1,1002 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>ISCII91 xref</title>
+<link type="text/css" rel="stylesheet" href="../../../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="sun/nio/cs/ext/ISCII91.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_comment">/*</em>
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_comment"> * Copyright (c) 2002, 2006, Oracle and/or its affiliates. All rights reserved.</em>
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_comment"> * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</em>
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_comment"> *</em>
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_comment"> * This code is free software; you can redistribute it and/or modify it</em>
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <em class="jxr_comment"> * under the terms of the GNU General Public License version 2 only, as</em>
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_comment"> * published by the Free Software Foundation.  Oracle designates this</em>
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_comment"> * particular file as subject to the "Classpath" exception as provided</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_comment"> * by Oracle in the LICENSE file that accompanied this code.</em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_comment"> *</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_comment"> * This code is distributed in the hope that it will be useful, but WITHOUT</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_comment"> * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</em>
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <em class="jxr_comment"> * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</em>
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  <em class="jxr_comment"> * version 2 for more details (a copy is included in the LICENSE file that</em>
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <em class="jxr_comment"> * accompanied this code).</em>
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  <em class="jxr_comment"> *</em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  <em class="jxr_comment"> * You should have received a copy of the GNU General Public License version</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <em class="jxr_comment"> * 2 along with this work; if not, write to the Free Software Foundation,</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <em class="jxr_comment"> * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</em>
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  <em class="jxr_comment"> *</em>
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  <em class="jxr_comment"> * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA</em>
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  <em class="jxr_comment"> * or visit www.oracle.com if you need additional information or have any</em>
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  <em class="jxr_comment"> * questions.</em>
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  <em class="jxr_comment"> */</em>
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>  <em class="jxr_comment">/*</em>
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>  <em class="jxr_comment"> */</em>
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>  
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  <strong class="jxr_keyword">package</strong> sun.nio.cs.ext;
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>  
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>  <strong class="jxr_keyword">import</strong> java.nio.charset.Charset;
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>  <strong class="jxr_keyword">import</strong> java.nio.CharBuffer;
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>  <strong class="jxr_keyword">import</strong> java.nio.ByteBuffer;
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>  <strong class="jxr_keyword">import</strong> java.nio.charset.CharsetDecoder;
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>  <strong class="jxr_keyword">import</strong> java.nio.charset.CharsetEncoder;
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>  <strong class="jxr_keyword">import</strong> java.nio.charset.CoderResult;
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>  <strong class="jxr_keyword">import</strong> sun.nio.cs.Surrogate;
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>  <strong class="jxr_keyword">import</strong> sun.nio.cs.HistoricallyNamedCharset;
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>  
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> ISCII91 <strong class="jxr_keyword">extends</strong> Charset <strong class="jxr_keyword">implements</strong> HistoricallyNamedCharset
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>  {
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">char</strong> NUKTA_CHAR = '\u093c';
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">char</strong> HALANT_CHAR = '\u094d';
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> byte NO_CHAR = (byte)255;
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>  
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>      <strong class="jxr_keyword">public</strong> ISCII91() {
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>          <strong class="jxr_keyword">super</strong>(<span class="jxr_string">"x-ISCII91"</span>, ExtendedCharsets.aliasesFor(<span class="jxr_string">"x-ISCII91"</span>));
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>      }
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>  
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>      <strong class="jxr_keyword">public</strong> String historicalName() {
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>          <strong class="jxr_keyword">return</strong> <span class="jxr_string">"ISCII91"</span>;
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>      }
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>  
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">boolean</strong> contains(Charset cs) {
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>          <strong class="jxr_keyword">return</strong> ((cs.name().equals(<span class="jxr_string">"US-ASCII"</span>))
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>                  || (cs instanceof ISCII91));
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>      }
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>  
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>      <strong class="jxr_keyword">public</strong> CharsetDecoder newDecoder() {
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>          <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> Decoder(<strong class="jxr_keyword">this</strong>);
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>      }
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>  
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>      <strong class="jxr_keyword">public</strong> CharsetEncoder newEncoder() {
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>          <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> Encoder(<strong class="jxr_keyword">this</strong>);
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>      }
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>  
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">char</strong>[] directMapTable = {
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>          '\u0000', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>          '\u0001', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>          '\u0002', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>          '\u0003', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>          '\u0004', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>          '\u0005', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>          '\u0006', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>          '\u0007', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>          '\u0008', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>          '\u0009', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>          '\012', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>          '\u000b', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>          '\u000c', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L82" href="#L82">82</a>          '\015', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L83" href="#L83">83</a>          '\u000e', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L84" href="#L84">84</a>          '\u000f', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L85" href="#L85">85</a>          '\u0010', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L86" href="#L86">86</a>          '\u0011', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L87" href="#L87">87</a>          '\u0012', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L88" href="#L88">88</a>          '\u0013', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L89" href="#L89">89</a>          '\u0014', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L90" href="#L90">90</a>          '\u0015', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L91" href="#L91">91</a>          '\u0016', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L92" href="#L92">92</a>          '\u0017', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L93" href="#L93">93</a>          '\u0018', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L94" href="#L94">94</a>          '\u0019', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L95" href="#L95">95</a>          '\u001a', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L96" href="#L96">96</a>          '\u001b', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L97" href="#L97">97</a>          '\u001c', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L98" href="#L98">98</a>          '\u001d', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L99" href="#L99">99</a>          '\u001e', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L100" href="#L100">100</a>         '\u001f', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L101" href="#L101">101</a>         '\u0020', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L102" href="#L102">102</a>         '\u0021', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L103" href="#L103">103</a>         '\u0022', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L104" href="#L104">104</a>         '\u0023', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L105" href="#L105">105</a>         '\u0024', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L106" href="#L106">106</a>         '\u0025', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L107" href="#L107">107</a>         '\u0026', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L108" href="#L108">108</a>         (<strong class="jxr_keyword">char</strong>)0x0027, <em class="jxr_comment">// '\u0027' control -- ascii character</em>
+<a class="jxr_linenumber" name="L109" href="#L109">109</a>         '\u0028', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L110" href="#L110">110</a>         '\u0029', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L111" href="#L111">111</a>         '\u002a', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L112" href="#L112">112</a>         '\u002b', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L113" href="#L113">113</a>         '\u002c', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L114" href="#L114">114</a>         '\u002d', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L115" href="#L115">115</a>         '\u002e', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L116" href="#L116">116</a>         '\u002f', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L117" href="#L117">117</a>         '\u0030', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L118" href="#L118">118</a>         '\u0031', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L119" href="#L119">119</a>         '\u0032', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L120" href="#L120">120</a>         '\u0033', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L121" href="#L121">121</a>         '\u0034', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L122" href="#L122">122</a>         '\u0035', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L123" href="#L123">123</a>         '\u0036', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L124" href="#L124">124</a>         '\u0037', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L125" href="#L125">125</a>         '\u0038', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L126" href="#L126">126</a>         '\u0039', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L127" href="#L127">127</a>         '\u003a', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L128" href="#L128">128</a>         '\u003b', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L129" href="#L129">129</a>         '\u003c', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L130" href="#L130">130</a>         '\u003d', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L131" href="#L131">131</a>         '\u003e', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L132" href="#L132">132</a>         '\u003f', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L133" href="#L133">133</a>         '\u0040', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L134" href="#L134">134</a>         '\u0041', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L135" href="#L135">135</a>         '\u0042', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L136" href="#L136">136</a>         '\u0043', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L137" href="#L137">137</a>         '\u0044', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L138" href="#L138">138</a>         '\u0045', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L139" href="#L139">139</a>         '\u0046', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L140" href="#L140">140</a>         '\u0047', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L141" href="#L141">141</a>         '\u0048', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L142" href="#L142">142</a>         '\u0049', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L143" href="#L143">143</a>         '\u004a', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L144" href="#L144">144</a>         '\u004b', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L145" href="#L145">145</a>         '\u004c', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L146" href="#L146">146</a>         '\u004d', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L147" href="#L147">147</a>         '\u004e', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L148" href="#L148">148</a>         '\u004f', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L149" href="#L149">149</a>         '\u0050', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L150" href="#L150">150</a>         '\u0051', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L151" href="#L151">151</a>         '\u0052', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L152" href="#L152">152</a>         '\u0053', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L153" href="#L153">153</a>         '\u0054', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L154" href="#L154">154</a>         '\u0055', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L155" href="#L155">155</a>         '\u0056', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L156" href="#L156">156</a>         '\u0057', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L157" href="#L157">157</a>         '\u0058', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L158" href="#L158">158</a>         '\u0059', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L159" href="#L159">159</a>         '\u005a', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L160" href="#L160">160</a>         '\u005b', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L161" href="#L161">161</a>         '&#92;&#92;',<em class="jxr_comment">// '\u005c' -- ascii character</em>
+<a class="jxr_linenumber" name="L162" href="#L162">162</a>         '\u005d', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L163" href="#L163">163</a>         '\u005e', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L164" href="#L164">164</a>         '\u005f', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L165" href="#L165">165</a>         '\u0060', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L166" href="#L166">166</a>         '\u0061', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L167" href="#L167">167</a>         '\u0062', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L168" href="#L168">168</a>         '\u0063', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L169" href="#L169">169</a>         '\u0064', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L170" href="#L170">170</a>         '\u0065', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L171" href="#L171">171</a>         '\u0066', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L172" href="#L172">172</a>         '\u0067', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L173" href="#L173">173</a>         '\u0068', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L174" href="#L174">174</a>         '\u0069', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L175" href="#L175">175</a>         '\u006a', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L176" href="#L176">176</a>         '\u006b', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L177" href="#L177">177</a>         '\u006c', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L178" href="#L178">178</a>         '\u006d', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L179" href="#L179">179</a>         '\u006e', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L180" href="#L180">180</a>         '\u006f', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L181" href="#L181">181</a>         '\u0070', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L182" href="#L182">182</a>         '\u0071', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L183" href="#L183">183</a>         '\u0072', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L184" href="#L184">184</a>         '\u0073', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L185" href="#L185">185</a>         '\u0074', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L186" href="#L186">186</a>         '\u0075', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L187" href="#L187">187</a>         '\u0076', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L188" href="#L188">188</a>         '\u0077', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L189" href="#L189">189</a>         '\u0078', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L190" href="#L190">190</a>         '\u0079', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L191" href="#L191">191</a>         '\u007a', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L192" href="#L192">192</a>         '\u007b', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L193" href="#L193">193</a>         '\u007c', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L194" href="#L194">194</a>         '\u007d', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L195" href="#L195">195</a>         '\u007e', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L196" href="#L196">196</a>         '\u007f', <em class="jxr_comment">// ascii character</em>
+<a class="jxr_linenumber" name="L197" href="#L197">197</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L198" href="#L198">198</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L199" href="#L199">199</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L200" href="#L200">200</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L201" href="#L201">201</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L202" href="#L202">202</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L203" href="#L203">203</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L204" href="#L204">204</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L205" href="#L205">205</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L206" href="#L206">206</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L207" href="#L207">207</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L208" href="#L208">208</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L209" href="#L209">209</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L210" href="#L210">210</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L211" href="#L211">211</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L212" href="#L212">212</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L213" href="#L213">213</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L214" href="#L214">214</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L215" href="#L215">215</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L216" href="#L216">216</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L217" href="#L217">217</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L218" href="#L218">218</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L219" href="#L219">219</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L220" href="#L220">220</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L221" href="#L221">221</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L222" href="#L222">222</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L223" href="#L223">223</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L224" href="#L224">224</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L225" href="#L225">225</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L226" href="#L226">226</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L227" href="#L227">227</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L228" href="#L228">228</a>         '\uffff', <em class="jxr_comment">// unknown character</em>
+<a class="jxr_linenumber" name="L229" href="#L229">229</a>         '\u0901', <em class="jxr_comment">// a1 -- Vowel-modifier CHANDRABINDU</em>
+<a class="jxr_linenumber" name="L230" href="#L230">230</a>         '\u0902', <em class="jxr_comment">// a2 -- Vowel-modifier ANUSWAR</em>
+<a class="jxr_linenumber" name="L231" href="#L231">231</a>         '\u0903', <em class="jxr_comment">// a3 -- Vowel-modifier VISARG</em>
+<a class="jxr_linenumber" name="L232" href="#L232">232</a> 
+<a class="jxr_linenumber" name="L233" href="#L233">233</a>         '\u0905', <em class="jxr_comment">// a4 -- Vowel A</em>
+<a class="jxr_linenumber" name="L234" href="#L234">234</a>         '\u0906', <em class="jxr_comment">// a5 -- Vowel AA</em>
+<a class="jxr_linenumber" name="L235" href="#L235">235</a>         '\u0907', <em class="jxr_comment">// a6 -- Vowel I</em>
+<a class="jxr_linenumber" name="L236" href="#L236">236</a>         '\u0908', <em class="jxr_comment">// a7 -- Vowel II</em>
+<a class="jxr_linenumber" name="L237" href="#L237">237</a>         '\u0909', <em class="jxr_comment">// a8 -- Vowel U</em>
+<a class="jxr_linenumber" name="L238" href="#L238">238</a>         '\u090a', <em class="jxr_comment">// a9 -- Vowel UU</em>
+<a class="jxr_linenumber" name="L239" href="#L239">239</a>         '\u090b', <em class="jxr_comment">// aa -- Vowel RI</em>
+<a class="jxr_linenumber" name="L240" href="#L240">240</a>         '\u090e', <em class="jxr_comment">// ab -- Vowel E ( Southern Scripts )</em>
+<a class="jxr_linenumber" name="L241" href="#L241">241</a>         '\u090f', <em class="jxr_comment">// ac -- Vowel EY</em>
+<a class="jxr_linenumber" name="L242" href="#L242">242</a>         '\u0910', <em class="jxr_comment">// ad -- Vowel AI</em>
+<a class="jxr_linenumber" name="L243" href="#L243">243</a>         '\u090d', <em class="jxr_comment">// ae -- Vowel AYE ( Devanagari Script )</em>
+<a class="jxr_linenumber" name="L244" href="#L244">244</a>         '\u0912', <em class="jxr_comment">// af -- Vowel O ( Southern Scripts )</em>
+<a class="jxr_linenumber" name="L245" href="#L245">245</a>         '\u0913', <em class="jxr_comment">// b0 -- Vowel OW</em>
+<a class="jxr_linenumber" name="L246" href="#L246">246</a>         '\u0914', <em class="jxr_comment">// b1 -- Vowel AU</em>
+<a class="jxr_linenumber" name="L247" href="#L247">247</a>         '\u0911', <em class="jxr_comment">// b2 -- Vowel AWE ( Devanagari Script )</em>
+<a class="jxr_linenumber" name="L248" href="#L248">248</a>         '\u0915', <em class="jxr_comment">// b3 -- Consonant KA</em>
+<a class="jxr_linenumber" name="L249" href="#L249">249</a>         '\u0916', <em class="jxr_comment">// b4 -- Consonant KHA</em>
+<a class="jxr_linenumber" name="L250" href="#L250">250</a>         '\u0917', <em class="jxr_comment">// b5 -- Consonant GA</em>
+<a class="jxr_linenumber" name="L251" href="#L251">251</a>         '\u0918', <em class="jxr_comment">// b6 -- Consonant GHA</em>
+<a class="jxr_linenumber" name="L252" href="#L252">252</a>         '\u0919', <em class="jxr_comment">// b7 -- Consonant NGA</em>
+<a class="jxr_linenumber" name="L253" href="#L253">253</a>         '\u091a', <em class="jxr_comment">// b8 -- Consonant CHA</em>
+<a class="jxr_linenumber" name="L254" href="#L254">254</a>         '\u091b', <em class="jxr_comment">// b9 -- Consonant CHHA</em>
+<a class="jxr_linenumber" name="L255" href="#L255">255</a>         '\u091c', <em class="jxr_comment">// ba -- Consonant JA</em>
+<a class="jxr_linenumber" name="L256" href="#L256">256</a>         '\u091d', <em class="jxr_comment">// bb -- Consonant JHA</em>
+<a class="jxr_linenumber" name="L257" href="#L257">257</a>         '\u091e', <em class="jxr_comment">// bc -- Consonant JNA</em>
+<a class="jxr_linenumber" name="L258" href="#L258">258</a>         '\u091f', <em class="jxr_comment">// bd -- Consonant Hard TA</em>
+<a class="jxr_linenumber" name="L259" href="#L259">259</a>         '\u0920', <em class="jxr_comment">// be -- Consonant Hard THA</em>
+<a class="jxr_linenumber" name="L260" href="#L260">260</a>         '\u0921', <em class="jxr_comment">// bf -- Consonant Hard DA</em>
+<a class="jxr_linenumber" name="L261" href="#L261">261</a>         '\u0922', <em class="jxr_comment">// c0 -- Consonant Hard DHA</em>
+<a class="jxr_linenumber" name="L262" href="#L262">262</a>         '\u0923', <em class="jxr_comment">// c1 -- Consonant Hard NA</em>
+<a class="jxr_linenumber" name="L263" href="#L263">263</a>         '\u0924', <em class="jxr_comment">// c2 -- Consonant Soft TA</em>
+<a class="jxr_linenumber" name="L264" href="#L264">264</a>         '\u0925', <em class="jxr_comment">// c3 -- Consonant Soft THA</em>
+<a class="jxr_linenumber" name="L265" href="#L265">265</a>         '\u0926', <em class="jxr_comment">// c4 -- Consonant Soft DA</em>
+<a class="jxr_linenumber" name="L266" href="#L266">266</a>         '\u0927', <em class="jxr_comment">// c5 -- Consonant Soft DHA</em>
+<a class="jxr_linenumber" name="L267" href="#L267">267</a>         '\u0928', <em class="jxr_comment">// c6 -- Consonant Soft NA</em>
+<a class="jxr_linenumber" name="L268" href="#L268">268</a>         '\u0929', <em class="jxr_comment">// c7 -- Consonant NA ( Tamil )</em>
+<a class="jxr_linenumber" name="L269" href="#L269">269</a>         '\u092a', <em class="jxr_comment">// c8 -- Consonant PA</em>
+<a class="jxr_linenumber" name="L270" href="#L270">270</a>         '\u092b', <em class="jxr_comment">// c9 -- Consonant PHA</em>
+<a class="jxr_linenumber" name="L271" href="#L271">271</a>         '\u092c', <em class="jxr_comment">// ca -- Consonant BA</em>
+<a class="jxr_linenumber" name="L272" href="#L272">272</a>         '\u092d', <em class="jxr_comment">// cb -- Consonant BHA</em>
+<a class="jxr_linenumber" name="L273" href="#L273">273</a>         '\u092e', <em class="jxr_comment">// cc -- Consonant MA</em>
+<a class="jxr_linenumber" name="L274" href="#L274">274</a>         '\u092f', <em class="jxr_comment">// cd -- Consonant YA</em>
+<a class="jxr_linenumber" name="L275" href="#L275">275</a>         '\u095f', <em class="jxr_comment">// ce -- Consonant JYA ( Bengali, Assamese &amp; Oriya )</em>
+<a class="jxr_linenumber" name="L276" href="#L276">276</a>         '\u0930', <em class="jxr_comment">// cf -- Consonant RA</em>
+<a class="jxr_linenumber" name="L277" href="#L277">277</a>         '\u0931', <em class="jxr_comment">// d0 -- Consonant Hard RA ( Southern Scripts )</em>
+<a class="jxr_linenumber" name="L278" href="#L278">278</a>         '\u0932', <em class="jxr_comment">// d1 -- Consonant LA</em>
+<a class="jxr_linenumber" name="L279" href="#L279">279</a>         '\u0933', <em class="jxr_comment">// d2 -- Consonant Hard LA</em>
+<a class="jxr_linenumber" name="L280" href="#L280">280</a>         '\u0934', <em class="jxr_comment">// d3 -- Consonant ZHA ( Tamil &amp; Malayalam )</em>
+<a class="jxr_linenumber" name="L281" href="#L281">281</a>         '\u0935', <em class="jxr_comment">// d4 -- Consonant VA</em>
+<a class="jxr_linenumber" name="L282" href="#L282">282</a>         '\u0936', <em class="jxr_comment">// d5 -- Consonant SHA</em>
+<a class="jxr_linenumber" name="L283" href="#L283">283</a>         '\u0937', <em class="jxr_comment">// d6 -- Consonant Hard SHA</em>
+<a class="jxr_linenumber" name="L284" href="#L284">284</a>         '\u0938', <em class="jxr_comment">// d7 -- Consonant SA</em>
+<a class="jxr_linenumber" name="L285" href="#L285">285</a>         '\u0939', <em class="jxr_comment">// d8 -- Consonant HA</em>
+<a class="jxr_linenumber" name="L286" href="#L286">286</a> 
+<a class="jxr_linenumber" name="L287" href="#L287">287</a>         '\u200d', <em class="jxr_comment">// d9 -- Consonant INVISIBLE</em>
+<a class="jxr_linenumber" name="L288" href="#L288">288</a>         '\u093e', <em class="jxr_comment">// da -- Vowel Sign AA</em>
+<a class="jxr_linenumber" name="L289" href="#L289">289</a> 
+<a class="jxr_linenumber" name="L290" href="#L290">290</a>         '\u093f', <em class="jxr_comment">// db -- Vowel Sign I</em>
+<a class="jxr_linenumber" name="L291" href="#L291">291</a>         '\u0940', <em class="jxr_comment">// dc -- Vowel Sign II</em>
+<a class="jxr_linenumber" name="L292" href="#L292">292</a>         '\u0941', <em class="jxr_comment">// dd -- Vowel Sign U</em>
+<a class="jxr_linenumber" name="L293" href="#L293">293</a>         '\u0942', <em class="jxr_comment">// de -- Vowel Sign UU</em>
+<a class="jxr_linenumber" name="L294" href="#L294">294</a>         '\u0943', <em class="jxr_comment">// df -- Vowel Sign RI</em>
+<a class="jxr_linenumber" name="L295" href="#L295">295</a>         '\u0946', <em class="jxr_comment">// e0 -- Vowel Sign E ( Southern Scripts )</em>
+<a class="jxr_linenumber" name="L296" href="#L296">296</a>         '\u0947', <em class="jxr_comment">// e1 -- Vowel Sign EY</em>
+<a class="jxr_linenumber" name="L297" href="#L297">297</a>         '\u0948', <em class="jxr_comment">// e2 -- Vowel Sign AI</em>
+<a class="jxr_linenumber" name="L298" href="#L298">298</a>         '\u0945', <em class="jxr_comment">// e3 -- Vowel Sign AYE ( Devanagari Script )</em>
+<a class="jxr_linenumber" name="L299" href="#L299">299</a>         '\u094a', <em class="jxr_comment">// e4 -- Vowel Sign O ( Southern Scripts )</em>
+<a class="jxr_linenumber" name="L300" href="#L300">300</a>         '\u094b', <em class="jxr_comment">// e5 -- Vowel Sign OW</em>
+<a class="jxr_linenumber" name="L301" href="#L301">301</a>         '\u094c', <em class="jxr_comment">// e6 -- Vowel Sign AU</em>
+<a class="jxr_linenumber" name="L302" href="#L302">302</a>         '\u0949', <em class="jxr_comment">// e7 -- Vowel Sign AWE ( Devanagari Script )</em>
+<a class="jxr_linenumber" name="L303" href="#L303">303</a> 
+<a class="jxr_linenumber" name="L304" href="#L304">304</a>         '\u094d', <em class="jxr_comment">// e8 -- Vowel Omission Sign ( Halant )</em>
+<a class="jxr_linenumber" name="L305" href="#L305">305</a>         '\u093c', <em class="jxr_comment">// e9 -- Diacritic Sign ( Nukta )</em>
+<a class="jxr_linenumber" name="L306" href="#L306">306</a>         '\u0964', <em class="jxr_comment">// ea -- Full Stop ( Viram, Northern Scripts )</em>
+<a class="jxr_linenumber" name="L307" href="#L307">307</a> 
+<a class="jxr_linenumber" name="L308" href="#L308">308</a>         '\uffff', <em class="jxr_comment">// eb -- This position shall not be used</em>
+<a class="jxr_linenumber" name="L309" href="#L309">309</a>         '\uffff', <em class="jxr_comment">// ec -- This position shall not be used</em>
+<a class="jxr_linenumber" name="L310" href="#L310">310</a>         '\uffff', <em class="jxr_comment">// ed -- This position shall not be used</em>
+<a class="jxr_linenumber" name="L311" href="#L311">311</a>         '\uffff', <em class="jxr_comment">// ee -- This position shall not be used</em>
+<a class="jxr_linenumber" name="L312" href="#L312">312</a> 
+<a class="jxr_linenumber" name="L313" href="#L313">313</a>         '\ufffd', <em class="jxr_comment">// ef -- Attribute Code ( ATR )</em>
+<a class="jxr_linenumber" name="L314" href="#L314">314</a>         '\ufffd', <em class="jxr_comment">// f0 -- Extension Code ( EXT )</em>
+<a class="jxr_linenumber" name="L315" href="#L315">315</a> 
+<a class="jxr_linenumber" name="L316" href="#L316">316</a>         '\u0966', <em class="jxr_comment">// f1 -- Digit 0</em>
+<a class="jxr_linenumber" name="L317" href="#L317">317</a>         '\u0967', <em class="jxr_comment">// f2 -- Digit 1</em>
+<a class="jxr_linenumber" name="L318" href="#L318">318</a>         '\u0968', <em class="jxr_comment">// f3 -- Digit 2</em>
+<a class="jxr_linenumber" name="L319" href="#L319">319</a>         '\u0969', <em class="jxr_comment">// f4 -- Digit 3</em>
+<a class="jxr_linenumber" name="L320" href="#L320">320</a>         '\u096a', <em class="jxr_comment">// f5 -- Digit 4</em>
+<a class="jxr_linenumber" name="L321" href="#L321">321</a>         '\u096b', <em class="jxr_comment">// f6 -- Digit 5</em>
+<a class="jxr_linenumber" name="L322" href="#L322">322</a>         '\u096c', <em class="jxr_comment">// f7 -- Digit 6</em>
+<a class="jxr_linenumber" name="L323" href="#L323">323</a>         '\u096d', <em class="jxr_comment">// f8 -- Digit 7</em>
+<a class="jxr_linenumber" name="L324" href="#L324">324</a>         '\u096e', <em class="jxr_comment">// f9 -- Digit 8</em>
+<a class="jxr_linenumber" name="L325" href="#L325">325</a>         '\u096f', <em class="jxr_comment">// fa -- Digit 9</em>
+<a class="jxr_linenumber" name="L326" href="#L326">326</a> 
+<a class="jxr_linenumber" name="L327" href="#L327">327</a>         '\uffff', <em class="jxr_comment">// fb -- This position shall not be used</em>
+<a class="jxr_linenumber" name="L328" href="#L328">328</a>         '\uffff', <em class="jxr_comment">// fc -- This position shall not be used</em>
+<a class="jxr_linenumber" name="L329" href="#L329">329</a>         '\uffff', <em class="jxr_comment">// fd -- This position shall not be used</em>
+<a class="jxr_linenumber" name="L330" href="#L330">330</a>         '\uffff', <em class="jxr_comment">// fe -- This position shall not be used</em>
+<a class="jxr_linenumber" name="L331" href="#L331">331</a>         '\uffff'  <em class="jxr_comment">// ff -- This position shall not be used</em>
+<a class="jxr_linenumber" name="L332" href="#L332">332</a>     }; <em class="jxr_comment">//end of table definition</em>
+<a class="jxr_linenumber" name="L333" href="#L333">333</a> 
+<a class="jxr_linenumber" name="L334" href="#L334">334</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L335" href="#L335">335</a> <em class="jxr_javadoccomment">     * This accessor is temporarily supplied while sun.io</em>
+<a class="jxr_linenumber" name="L336" href="#L336">336</a> <em class="jxr_javadoccomment">     * converters co-exist with the sun.nio.cs.{ext} charset coders</em>
+<a class="jxr_linenumber" name="L337" href="#L337">337</a> <em class="jxr_javadoccomment">     * These facilitate sharing of conversion tables between the</em>
+<a class="jxr_linenumber" name="L338" href="#L338">338</a> <em class="jxr_javadoccomment">     * two co-existing implementations. When sun.io converters</em>
+<a class="jxr_linenumber" name="L339" href="#L339">339</a> <em class="jxr_javadoccomment">     * are made extinct these will be unnecessary and should be removed</em>
+<a class="jxr_linenumber" name="L340" href="#L340">340</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="L341" href="#L341">341</a> 
+<a class="jxr_linenumber" name="L342" href="#L342">342</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">char</strong>[] getDirectMapTable() {
+<a class="jxr_linenumber" name="L343" href="#L343">343</a>         <strong class="jxr_keyword">return</strong> directMapTable;
+<a class="jxr_linenumber" name="L344" href="#L344">344</a>     }
+<a class="jxr_linenumber" name="L345" href="#L345">345</a> 
+<a class="jxr_linenumber" name="L346" href="#L346">346</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> byte[] encoderMappingTable = {
+<a class="jxr_linenumber" name="L347" href="#L347">347</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0900 &lt;reserved&gt;</em>
+<a class="jxr_linenumber" name="L348" href="#L348">348</a>     (byte)161,NO_CHAR, <em class="jxr_comment">//0901 -- DEVANAGARI SIGN CANDRABINDU = anunasika</em>
+<a class="jxr_linenumber" name="L349" href="#L349">349</a>     (byte)162,NO_CHAR, <em class="jxr_comment">//0902 -- DEVANAGARI SIGN ANUSVARA = bindu</em>
+<a class="jxr_linenumber" name="L350" href="#L350">350</a>     (byte)163,NO_CHAR, <em class="jxr_comment">//0903 -- DEVANAGARI SIGN VISARGA</em>
+<a class="jxr_linenumber" name="L351" href="#L351">351</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0904 &lt;reserved&gt;</em>
+<a class="jxr_linenumber" name="L352" href="#L352">352</a>     (byte)164,NO_CHAR, <em class="jxr_comment">//0905 -- DEVANAGARI LETTER A</em>
+<a class="jxr_linenumber" name="L353" href="#L353">353</a>     (byte)165,NO_CHAR, <em class="jxr_comment">//0906 -- DEVANAGARI LETTER AA</em>
+<a class="jxr_linenumber" name="L354" href="#L354">354</a>     (byte)166,NO_CHAR, <em class="jxr_comment">//0907 -- DEVANAGARI LETTER I</em>
+<a class="jxr_linenumber" name="L355" href="#L355">355</a>     (byte)167,NO_CHAR, <em class="jxr_comment">//0908 -- DEVANAGARI LETTER II</em>
+<a class="jxr_linenumber" name="L356" href="#L356">356</a>     (byte)168,NO_CHAR, <em class="jxr_comment">//0909 -- DEVANAGARI LETTER U</em>
+<a class="jxr_linenumber" name="L357" href="#L357">357</a>     (byte)169,NO_CHAR, <em class="jxr_comment">//090a -- DEVANAGARI LETTER UU</em>
+<a class="jxr_linenumber" name="L358" href="#L358">358</a>     (byte)170,NO_CHAR, <em class="jxr_comment">//090b -- DEVANAGARI LETTER VOCALIC R</em>
+<a class="jxr_linenumber" name="L359" href="#L359">359</a>     (byte)166,(byte)233, <em class="jxr_comment">//090c -- DEVANAGARI LETTER VOVALIC L</em>
+<a class="jxr_linenumber" name="L360" href="#L360">360</a>     (byte)174,NO_CHAR, <em class="jxr_comment">//090d -- DEVANAGARI LETTER CANDRA E</em>
+<a class="jxr_linenumber" name="L361" href="#L361">361</a>     (byte)171,NO_CHAR, <em class="jxr_comment">//090e -- DEVANAGARI LETTER SHORT E</em>
+<a class="jxr_linenumber" name="L362" href="#L362">362</a>     (byte)172,NO_CHAR, <em class="jxr_comment">//090f -- DEVANAGARI LETTER E</em>
+<a class="jxr_linenumber" name="L363" href="#L363">363</a>     (byte)173,NO_CHAR, <em class="jxr_comment">//0910 -- DEVANAGARI LETTER AI</em>
+<a class="jxr_linenumber" name="L364" href="#L364">364</a>     (byte)178,NO_CHAR, <em class="jxr_comment">//0911 -- DEVANAGARI LETTER CANDRA O</em>
+<a class="jxr_linenumber" name="L365" href="#L365">365</a>     (byte)175,NO_CHAR, <em class="jxr_comment">//0912 -- DEVANAGARI LETTER SHORT O</em>
+<a class="jxr_linenumber" name="L366" href="#L366">366</a>     (byte)176,NO_CHAR, <em class="jxr_comment">//0913 -- DEVANAGARI LETTER O</em>
+<a class="jxr_linenumber" name="L367" href="#L367">367</a>     (byte)177,NO_CHAR, <em class="jxr_comment">//0914 -- DEVANAGARI LETTER AU</em>
+<a class="jxr_linenumber" name="L368" href="#L368">368</a>     (byte)179,NO_CHAR, <em class="jxr_comment">//0915 -- DEVANAGARI LETTER KA</em>
+<a class="jxr_linenumber" name="L369" href="#L369">369</a>     (byte)180,NO_CHAR, <em class="jxr_comment">//0916 -- DEVANAGARI LETTER KHA</em>
+<a class="jxr_linenumber" name="L370" href="#L370">370</a>     (byte)181,NO_CHAR, <em class="jxr_comment">//0917 -- DEVANAGARI LETTER GA</em>
+<a class="jxr_linenumber" name="L371" href="#L371">371</a>     (byte)182,NO_CHAR, <em class="jxr_comment">//0918 -- DEVANAGARI LETTER GHA</em>
+<a class="jxr_linenumber" name="L372" href="#L372">372</a>     (byte)183,NO_CHAR, <em class="jxr_comment">//0919 -- DEVANAGARI LETTER NGA</em>
+<a class="jxr_linenumber" name="L373" href="#L373">373</a>     (byte)184,NO_CHAR, <em class="jxr_comment">//091a -- DEVANAGARI LETTER CA</em>
+<a class="jxr_linenumber" name="L374" href="#L374">374</a>     (byte)185,NO_CHAR, <em class="jxr_comment">//091b -- DEVANAGARI LETTER CHA</em>
+<a class="jxr_linenumber" name="L375" href="#L375">375</a>     (byte)186,NO_CHAR, <em class="jxr_comment">//091c -- DEVANAGARI LETTER JA</em>
+<a class="jxr_linenumber" name="L376" href="#L376">376</a>     (byte)187,NO_CHAR, <em class="jxr_comment">//091d -- DEVANAGARI LETTER JHA</em>
+<a class="jxr_linenumber" name="L377" href="#L377">377</a>     (byte)188,NO_CHAR, <em class="jxr_comment">//091e -- DEVANAGARI LETTER NYA</em>
+<a class="jxr_linenumber" name="L378" href="#L378">378</a>     (byte)189,NO_CHAR, <em class="jxr_comment">//091f -- DEVANAGARI LETTER TTA</em>
+<a class="jxr_linenumber" name="L379" href="#L379">379</a>     (byte)190,NO_CHAR, <em class="jxr_comment">//0920 -- DEVANAGARI LETTER TTHA</em>
+<a class="jxr_linenumber" name="L380" href="#L380">380</a>     (byte)191,NO_CHAR, <em class="jxr_comment">//0921 -- DEVANAGARI LETTER DDA</em>
+<a class="jxr_linenumber" name="L381" href="#L381">381</a>     (byte)192,NO_CHAR, <em class="jxr_comment">//0922 -- DEVANAGARI LETTER DDHA</em>
+<a class="jxr_linenumber" name="L382" href="#L382">382</a>     (byte)193,NO_CHAR, <em class="jxr_comment">//0923 -- DEVANAGARI LETTER NNA</em>
+<a class="jxr_linenumber" name="L383" href="#L383">383</a>     (byte)194,NO_CHAR, <em class="jxr_comment">//0924 -- DEVANAGARI LETTER TA</em>
+<a class="jxr_linenumber" name="L384" href="#L384">384</a>     (byte)195,NO_CHAR, <em class="jxr_comment">//0925 -- DEVANAGARI LETTER THA</em>
+<a class="jxr_linenumber" name="L385" href="#L385">385</a>     (byte)196,NO_CHAR, <em class="jxr_comment">//0926 -- DEVANAGARI LETTER DA</em>
+<a class="jxr_linenumber" name="L386" href="#L386">386</a>     (byte)197,NO_CHAR, <em class="jxr_comment">//0927 -- DEVANAGARI LETTER DHA</em>
+<a class="jxr_linenumber" name="L387" href="#L387">387</a>     (byte)198,NO_CHAR, <em class="jxr_comment">//0928 -- DEVANAGARI LETTER NA</em>
+<a class="jxr_linenumber" name="L388" href="#L388">388</a>     (byte)199,NO_CHAR, <em class="jxr_comment">//0929 -- DEVANAGARI LETTER NNNA &lt;=&gt; 0928 + 093C</em>
+<a class="jxr_linenumber" name="L389" href="#L389">389</a>     (byte)200,NO_CHAR, <em class="jxr_comment">//092a -- DEVANAGARI LETTER PA</em>
+<a class="jxr_linenumber" name="L390" href="#L390">390</a>     (byte)201,NO_CHAR, <em class="jxr_comment">//092b -- DEVANAGARI LETTER PHA</em>
+<a class="jxr_linenumber" name="L391" href="#L391">391</a>     (byte)202,NO_CHAR, <em class="jxr_comment">//092c -- DEVANAGARI LETTER BA</em>
+<a class="jxr_linenumber" name="L392" href="#L392">392</a>     (byte)203,NO_CHAR, <em class="jxr_comment">//092d -- DEVANAGARI LETTER BHA</em>
+<a class="jxr_linenumber" name="L393" href="#L393">393</a>     (byte)204,NO_CHAR, <em class="jxr_comment">//092e -- DEVANAGARI LETTER MA</em>
+<a class="jxr_linenumber" name="L394" href="#L394">394</a>     (byte)205,NO_CHAR, <em class="jxr_comment">//092f -- DEVANAGARI LETTER YA</em>
+<a class="jxr_linenumber" name="L395" href="#L395">395</a>     (byte)207,NO_CHAR, <em class="jxr_comment">//0930 -- DEVANAGARI LETTER RA</em>
+<a class="jxr_linenumber" name="L396" href="#L396">396</a>     (byte)208,NO_CHAR, <em class="jxr_comment">//0931 -- DEVANAGARI LETTER RRA &lt;=&gt; 0930 + 093C</em>
+<a class="jxr_linenumber" name="L397" href="#L397">397</a>     (byte)209,NO_CHAR, <em class="jxr_comment">//0932 -- DEVANAGARI LETTER LA</em>
+<a class="jxr_linenumber" name="L398" href="#L398">398</a>     (byte)210,NO_CHAR, <em class="jxr_comment">//0933 -- DEVANAGARI LETTER LLA</em>
+<a class="jxr_linenumber" name="L399" href="#L399">399</a>     (byte)211,NO_CHAR, <em class="jxr_comment">//0934 -- DEVANAGARI LETTER LLLA &lt;=&gt; 0933 + 093C</em>
+<a class="jxr_linenumber" name="L400" href="#L400">400</a>     (byte)212,NO_CHAR, <em class="jxr_comment">//0935 -- DEVANAGARI LETTER VA</em>
+<a class="jxr_linenumber" name="L401" href="#L401">401</a>     (byte)213,NO_CHAR, <em class="jxr_comment">//0936 -- DEVANAGARI LETTER SHA</em>
+<a class="jxr_linenumber" name="L402" href="#L402">402</a>     (byte)214,NO_CHAR, <em class="jxr_comment">//0937 -- DEVANAGARI LETTER SSA</em>
+<a class="jxr_linenumber" name="L403" href="#L403">403</a>     (byte)215,NO_CHAR, <em class="jxr_comment">//0938 -- DEVANAGARI LETTER SA</em>
+<a class="jxr_linenumber" name="L404" href="#L404">404</a>     (byte)216,NO_CHAR, <em class="jxr_comment">//0939 -- DEVANAGARI LETTER HA</em>
+<a class="jxr_linenumber" name="L405" href="#L405">405</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//093a &lt;reserved&gt;</em>
+<a class="jxr_linenumber" name="L406" href="#L406">406</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//093b &lt;reserved&gt;</em>
+<a class="jxr_linenumber" name="L407" href="#L407">407</a>     (byte)233,NO_CHAR, <em class="jxr_comment">//093c -- DEVANAGARI SIGN NUKTA</em>
+<a class="jxr_linenumber" name="L408" href="#L408">408</a>     (byte)234,(byte)233, <em class="jxr_comment">//093d -- DEVANAGARI SIGN AVAGRAHA</em>
+<a class="jxr_linenumber" name="L409" href="#L409">409</a>     (byte)218,NO_CHAR, <em class="jxr_comment">//093e -- DEVANAGARI VOWEL SIGN AA</em>
+<a class="jxr_linenumber" name="L410" href="#L410">410</a>     (byte)219,NO_CHAR, <em class="jxr_comment">//093f -- DEVANAGARI VOWEL SIGN I</em>
+<a class="jxr_linenumber" name="L411" href="#L411">411</a>     (byte)220,NO_CHAR, <em class="jxr_comment">//0940 -- DEVANAGARI VOWEL SIGN II</em>
+<a class="jxr_linenumber" name="L412" href="#L412">412</a>     (byte)221,NO_CHAR, <em class="jxr_comment">//0941 -- DEVANAGARI VOWEL SIGN U</em>
+<a class="jxr_linenumber" name="L413" href="#L413">413</a>     (byte)222,NO_CHAR, <em class="jxr_comment">//0942 -- DEVANAGARI VOWEL SIGN UU</em>
+<a class="jxr_linenumber" name="L414" href="#L414">414</a>     (byte)223,NO_CHAR, <em class="jxr_comment">//0943 -- DEVANAGARI VOWEL SIGN VOCALIC R</em>
+<a class="jxr_linenumber" name="L415" href="#L415">415</a>     (byte)223,(byte)233, <em class="jxr_comment">//0944 -- DEVANAGARI VOWEL SIGN VOCALIC RR</em>
+<a class="jxr_linenumber" name="L416" href="#L416">416</a>     (byte)227,NO_CHAR, <em class="jxr_comment">//0945 -- DEVANAGARI VOWEL SIGN CANDRA E</em>
+<a class="jxr_linenumber" name="L417" href="#L417">417</a>     (byte)224,NO_CHAR, <em class="jxr_comment">//0946 -- DEVANAGARI VOWEL SIGN SHORT E</em>
+<a class="jxr_linenumber" name="L418" href="#L418">418</a>     (byte)225,NO_CHAR, <em class="jxr_comment">//0947 -- DEVANAGARI VOWEL SIGN E</em>
+<a class="jxr_linenumber" name="L419" href="#L419">419</a>     (byte)226,NO_CHAR, <em class="jxr_comment">//0948 -- DEVANAGARI VOWEL SIGN AI</em>
+<a class="jxr_linenumber" name="L420" href="#L420">420</a>     (byte)231,NO_CHAR, <em class="jxr_comment">//0949 -- DEVANAGARI VOWEL SIGN CANDRA O</em>
+<a class="jxr_linenumber" name="L421" href="#L421">421</a>     (byte)228,NO_CHAR, <em class="jxr_comment">//094a -- DEVANAGARI VOWEL SIGN SHORT O</em>
+<a class="jxr_linenumber" name="L422" href="#L422">422</a>     (byte)229,NO_CHAR, <em class="jxr_comment">//094b -- DEVANAGARI VOWEL SIGN O</em>
+<a class="jxr_linenumber" name="L423" href="#L423">423</a>     (byte)230,NO_CHAR, <em class="jxr_comment">//094c -- DEVANAGARI VOWEL SIGN AU</em>
+<a class="jxr_linenumber" name="L424" href="#L424">424</a>     (byte)232,NO_CHAR, <em class="jxr_comment">//094d -- DEVANAGARI SIGN VIRAMA ( halant )</em>
+<a class="jxr_linenumber" name="L425" href="#L425">425</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//094e &lt;reserved&gt;</em>
+<a class="jxr_linenumber" name="L426" href="#L426">426</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//094f &lt;reserved&gt;</em>
+<a class="jxr_linenumber" name="L427" href="#L427">427</a>     (byte)161,(byte)233, <em class="jxr_comment">//0950 -- DEVANAGARI OM</em>
+<a class="jxr_linenumber" name="L428" href="#L428">428</a>     (byte)240,(byte)181, <em class="jxr_comment">//0951 -- DEVANAGARI STRESS SIGN UDATTA</em>
+<a class="jxr_linenumber" name="L429" href="#L429">429</a>     (byte)240,(byte)184, <em class="jxr_comment">//0952 -- DEVANAGARI STRESS SIGN ANUDATTA</em>
+<a class="jxr_linenumber" name="L430" href="#L430">430</a>     (byte)254,NO_CHAR, <em class="jxr_comment">//0953 -- DEVANAGARI GRAVE ACCENT || MISSING</em>
+<a class="jxr_linenumber" name="L431" href="#L431">431</a>     (byte)254,NO_CHAR, <em class="jxr_comment">//0954 -- DEVANAGARI ACUTE ACCENT || MISSING</em>
+<a class="jxr_linenumber" name="L432" href="#L432">432</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0955 &lt;reserved&gt;</em>
+<a class="jxr_linenumber" name="L433" href="#L433">433</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0956 &lt;reserved&gt;</em>
+<a class="jxr_linenumber" name="L434" href="#L434">434</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0957 &lt;reserved&gt;</em>
+<a class="jxr_linenumber" name="L435" href="#L435">435</a>     (byte)179,(byte)233, <em class="jxr_comment">//0958 -- DEVANAGARI LETTER QA &lt;=&gt; 0915 + 093C</em>
+<a class="jxr_linenumber" name="L436" href="#L436">436</a>     (byte)180,(byte)233, <em class="jxr_comment">//0959 -- DEVANAGARI LETTER KHHA &lt;=&gt; 0916 + 093C</em>
+<a class="jxr_linenumber" name="L437" href="#L437">437</a>     (byte)181,(byte)233, <em class="jxr_comment">//095a -- DEVANAGARI LETTER GHHA &lt;=&gt; 0917 + 093C</em>
+<a class="jxr_linenumber" name="L438" href="#L438">438</a>     (byte)186,(byte)233, <em class="jxr_comment">//095b -- DEVANAGARI LETTER ZA &lt;=&gt; 091C + 093C</em>
+<a class="jxr_linenumber" name="L439" href="#L439">439</a>     (byte)191,(byte)233, <em class="jxr_comment">//095c -- DEVANAGARI LETTER DDDHA &lt;=&gt; 0921 + 093C</em>
+<a class="jxr_linenumber" name="L440" href="#L440">440</a>     (byte)192,(byte)233, <em class="jxr_comment">//095d -- DEVANAGARI LETTER RHA &lt;=&gt; 0922 + 093C</em>
+<a class="jxr_linenumber" name="L441" href="#L441">441</a>     (byte)201,(byte)233, <em class="jxr_comment">//095e -- DEVANAGARI LETTER FA &lt;=&gt; 092B + 093C</em>
+<a class="jxr_linenumber" name="L442" href="#L442">442</a>     (byte)206,NO_CHAR, <em class="jxr_comment">//095f -- DEVANAGARI LETTER YYA &lt;=&gt; 092F + 093C</em>
+<a class="jxr_linenumber" name="L443" href="#L443">443</a>     (byte)170,(byte)233, <em class="jxr_comment">//0960 -- DEVANAGARI LETTER VOCALIC RR</em>
+<a class="jxr_linenumber" name="L444" href="#L444">444</a>     (byte)167,(byte)233, <em class="jxr_comment">//0961 -- DEVANAGARI LETTER VOCALIC LL</em>
+<a class="jxr_linenumber" name="L445" href="#L445">445</a>     (byte)219,(byte)233, <em class="jxr_comment">//0962 -- DEVANAGARI VOWEL SIGN VOCALIC L</em>
+<a class="jxr_linenumber" name="L446" href="#L446">446</a>     (byte)220,(byte)233, <em class="jxr_comment">//0963 -- DEVANAGARI VOWEL SIGN VOCALIC LL</em>
+<a class="jxr_linenumber" name="L447" href="#L447">447</a>     (byte)234,NO_CHAR, <em class="jxr_comment">//0964 -- DEVANAGARI DANDA ( phrase separator )</em>
+<a class="jxr_linenumber" name="L448" href="#L448">448</a>     (byte)234,(byte)234, <em class="jxr_comment">//0965 -- DEVANAGARI DOUBLE DANDA</em>
+<a class="jxr_linenumber" name="L449" href="#L449">449</a>     (byte)241,NO_CHAR, <em class="jxr_comment">//0966 -- DEVANAGARI DIGIT ZERO</em>
+<a class="jxr_linenumber" name="L450" href="#L450">450</a>     (byte)242,NO_CHAR, <em class="jxr_comment">//0967 -- DEVANAGARI DIGIT ONE</em>
+<a class="jxr_linenumber" name="L451" href="#L451">451</a>     (byte)243,NO_CHAR, <em class="jxr_comment">//0968 -- DEVANAGARI DIGIT TWO</em>
+<a class="jxr_linenumber" name="L452" href="#L452">452</a>     (byte)244,NO_CHAR, <em class="jxr_comment">//0969 -- DEVANAGARI DIGIT THREE</em>
+<a class="jxr_linenumber" name="L453" href="#L453">453</a>     (byte)245,NO_CHAR, <em class="jxr_comment">//096a -- DEVANAGARI DIGIT FOUR</em>
+<a class="jxr_linenumber" name="L454" href="#L454">454</a>     (byte)246,NO_CHAR, <em class="jxr_comment">//096b -- DEVANAGARI DIGIT FIVE</em>
+<a class="jxr_linenumber" name="L455" href="#L455">455</a>     (byte)247,NO_CHAR, <em class="jxr_comment">//096c -- DEVANAGARI DIGIT SIX</em>
+<a class="jxr_linenumber" name="L456" href="#L456">456</a>     (byte)248,NO_CHAR, <em class="jxr_comment">//096d -- DEVANAGARI DIGIT SEVEN</em>
+<a class="jxr_linenumber" name="L457" href="#L457">457</a>     (byte)249,NO_CHAR, <em class="jxr_comment">//096e -- DEVANAGARI DIGIT EIGHT</em>
+<a class="jxr_linenumber" name="L458" href="#L458">458</a>     (byte)250,NO_CHAR, <em class="jxr_comment">//096f -- DEVANAGARI DIGIT NINE</em>
+<a class="jxr_linenumber" name="L459" href="#L459">459</a>     (byte)240,(byte)191,  <em class="jxr_comment">//0970 -- DEVANAGARI ABBREVIATION SIGN</em>
+<a class="jxr_linenumber" name="L460" href="#L460">460</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0971 -- reserved</em>
+<a class="jxr_linenumber" name="L461" href="#L461">461</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0972 -- reserved</em>
+<a class="jxr_linenumber" name="L462" href="#L462">462</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0973 -- reserved</em>
+<a class="jxr_linenumber" name="L463" href="#L463">463</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0974 -- reserved</em>
+<a class="jxr_linenumber" name="L464" href="#L464">464</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0975 -- reserved</em>
+<a class="jxr_linenumber" name="L465" href="#L465">465</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0976 -- reserved</em>
+<a class="jxr_linenumber" name="L466" href="#L466">466</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0977 -- reserved</em>
+<a class="jxr_linenumber" name="L467" href="#L467">467</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0978 -- reserved</em>
+<a class="jxr_linenumber" name="L468" href="#L468">468</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//0979 -- reserved</em>
+<a class="jxr_linenumber" name="L469" href="#L469">469</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//097a -- reserved</em>
+<a class="jxr_linenumber" name="L470" href="#L470">470</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//097b -- reserved</em>
+<a class="jxr_linenumber" name="L471" href="#L471">471</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//097c -- reserved</em>
+<a class="jxr_linenumber" name="L472" href="#L472">472</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//097d -- reserved</em>
+<a class="jxr_linenumber" name="L473" href="#L473">473</a>     NO_CHAR,NO_CHAR, <em class="jxr_comment">//097e -- reserved</em>
+<a class="jxr_linenumber" name="L474" href="#L474">474</a>     NO_CHAR,NO_CHAR  <em class="jxr_comment">//097f -- reserved</em>
+<a class="jxr_linenumber" name="L475" href="#L475">475</a>     }; <em class="jxr_comment">//end of table definition</em>
+<a class="jxr_linenumber" name="L476" href="#L476">476</a> 
+<a class="jxr_linenumber" name="L477" href="#L477">477</a> 
+<a class="jxr_linenumber" name="L478" href="#L478">478</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L479" href="#L479">479</a> <em class="jxr_javadoccomment">     * This accessor is temporarily supplied while sun.io</em>
+<a class="jxr_linenumber" name="L480" href="#L480">480</a> <em class="jxr_javadoccomment">     * converters co-exist with the sun.nio.cs.{ext} charset coders</em>
+<a class="jxr_linenumber" name="L481" href="#L481">481</a> <em class="jxr_javadoccomment">     * These facilitate sharing of conversion tables between the</em>
+<a class="jxr_linenumber" name="L482" href="#L482">482</a> <em class="jxr_javadoccomment">     * two co-existing implementations. When sun.io converters</em>
+<a class="jxr_linenumber" name="L483" href="#L483">483</a> <em class="jxr_javadoccomment">     * are made extinct these will be unnecessary and should be removed</em>
+<a class="jxr_linenumber" name="L484" href="#L484">484</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="L485" href="#L485">485</a> 
+<a class="jxr_linenumber" name="L486" href="#L486">486</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> byte[] getEncoderMappingTable() {
+<a class="jxr_linenumber" name="L487" href="#L487">487</a>         <strong class="jxr_keyword">return</strong> encoderMappingTable;
+<a class="jxr_linenumber" name="L488" href="#L488">488</a>     }
+<a class="jxr_linenumber" name="L489" href="#L489">489</a> 
+<a class="jxr_linenumber" name="L490" href="#L490">490</a> 
+<a class="jxr_linenumber" name="L491" href="#L491">491</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> Decoder <strong class="jxr_keyword">extends</strong> CharsetDecoder {
+<a class="jxr_linenumber" name="L492" href="#L492">492</a> 
+<a class="jxr_linenumber" name="L493" href="#L493">493</a>         <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">char</strong> ZWNJ_CHAR = '\u200c';
+<a class="jxr_linenumber" name="L494" href="#L494">494</a>         <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">char</strong> ZWJ_CHAR = '\u200d';
+<a class="jxr_linenumber" name="L495" href="#L495">495</a>         <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">char</strong> INVALID_CHAR = '\uffff';
+<a class="jxr_linenumber" name="L496" href="#L496">496</a> 
+<a class="jxr_linenumber" name="L497" href="#L497">497</a>         <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">char</strong> contextChar = INVALID_CHAR;
+<a class="jxr_linenumber" name="L498" href="#L498">498</a>         <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">boolean</strong> needFlushing = false;
+<a class="jxr_linenumber" name="L499" href="#L499">499</a> 
+<a class="jxr_linenumber" name="L500" href="#L500">500</a> 
+<a class="jxr_linenumber" name="L501" href="#L501">501</a>         <strong class="jxr_keyword">private</strong> Decoder(Charset cs) {
+<a class="jxr_linenumber" name="L502" href="#L502">502</a>             <strong class="jxr_keyword">super</strong>(cs, 1.0f, 1.0f);
+<a class="jxr_linenumber" name="L503" href="#L503">503</a>         }
+<a class="jxr_linenumber" name="L504" href="#L504">504</a> 
+<a class="jxr_linenumber" name="L505" href="#L505">505</a>         <strong class="jxr_keyword">protected</strong> CoderResult implFlush(CharBuffer out) {
+<a class="jxr_linenumber" name="L506" href="#L506">506</a>             <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L507" href="#L507">507</a>                 <strong class="jxr_keyword">if</strong> (out.remaining() &lt; 1) {
+<a class="jxr_linenumber" name="L508" href="#L508">508</a>                     <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L509" href="#L509">509</a>                 } <strong class="jxr_keyword">else</strong> {
+<a class="jxr_linenumber" name="L510" href="#L510">510</a>                     out.put(contextChar);
+<a class="jxr_linenumber" name="L511" href="#L511">511</a>                 }
+<a class="jxr_linenumber" name="L512" href="#L512">512</a>             }
+<a class="jxr_linenumber" name="L513" href="#L513">513</a>             contextChar = INVALID_CHAR;
+<a class="jxr_linenumber" name="L514" href="#L514">514</a>             needFlushing = false;
+<a class="jxr_linenumber" name="L515" href="#L515">515</a>             <strong class="jxr_keyword">return</strong> CoderResult.UNDERFLOW;
+<a class="jxr_linenumber" name="L516" href="#L516">516</a>         }
+<a class="jxr_linenumber" name="L517" href="#L517">517</a> 
+<a class="jxr_linenumber" name="L518" href="#L518">518</a>         <em class="jxr_comment">/*Rules:</em>
+<a class="jxr_linenumber" name="L519" href="#L519">519</a> <em class="jxr_comment">         * 1)ATR,EXT,following character to be replaced with '\ufffd'</em>
+<a class="jxr_linenumber" name="L520" href="#L520">520</a> <em class="jxr_comment">         * 2)Halant + Halant =&gt; '\u094d' (Virama) + '\u200c'(ZWNJ)</em>
+<a class="jxr_linenumber" name="L521" href="#L521">521</a> <em class="jxr_comment">         * 3)Halant + Nukta =&gt; '\u094d' (Virama) + '\u200d'(ZWJ)</em>
+<a class="jxr_linenumber" name="L522" href="#L522">522</a> <em class="jxr_comment">        */</em>
+<a class="jxr_linenumber" name="L523" href="#L523">523</a>         <strong class="jxr_keyword">private</strong> CoderResult decodeArrayLoop(ByteBuffer src,
+<a class="jxr_linenumber" name="L524" href="#L524">524</a>                                              CharBuffer dst)
+<a class="jxr_linenumber" name="L525" href="#L525">525</a>         {
+<a class="jxr_linenumber" name="L526" href="#L526">526</a>             byte[] sa = src.array();
+<a class="jxr_linenumber" name="L527" href="#L527">527</a>             <strong class="jxr_keyword">int</strong> sp = src.arrayOffset() + src.position();
+<a class="jxr_linenumber" name="L528" href="#L528">528</a>             <strong class="jxr_keyword">int</strong> sl = src.arrayOffset() + src.limit();
+<a class="jxr_linenumber" name="L529" href="#L529">529</a>             assert (sp &lt;= sl);
+<a class="jxr_linenumber" name="L530" href="#L530">530</a>             sp = (sp &lt;= sl ? sp : sl);
+<a class="jxr_linenumber" name="L531" href="#L531">531</a> 
+<a class="jxr_linenumber" name="L532" href="#L532">532</a>             <strong class="jxr_keyword">char</strong>[] da = dst.array();
+<a class="jxr_linenumber" name="L533" href="#L533">533</a>             <strong class="jxr_keyword">int</strong> dp = dst.arrayOffset() + dst.position();
+<a class="jxr_linenumber" name="L534" href="#L534">534</a>             <strong class="jxr_keyword">int</strong> dl = dst.arrayOffset() + dst.limit();
+<a class="jxr_linenumber" name="L535" href="#L535">535</a>             assert (dp &lt;= dl);
+<a class="jxr_linenumber" name="L536" href="#L536">536</a>             dp = (dp &lt;= dl ? dp : dl);
+<a class="jxr_linenumber" name="L537" href="#L537">537</a> 
+<a class="jxr_linenumber" name="L538" href="#L538">538</a>             <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L539" href="#L539">539</a>                 <strong class="jxr_keyword">while</strong> (sp &lt; sl) {
+<a class="jxr_linenumber" name="L540" href="#L540">540</a>                     <strong class="jxr_keyword">int</strong> index = sa[sp];
+<a class="jxr_linenumber" name="L541" href="#L541">541</a>                     index = ( index &lt; 0 )? ( index + 255 ):index;
+<a class="jxr_linenumber" name="L542" href="#L542">542</a>                     <strong class="jxr_keyword">char</strong> currentChar = directMapTable[index];
+<a class="jxr_linenumber" name="L543" href="#L543">543</a> 
+<a class="jxr_linenumber" name="L544" href="#L544">544</a>                     <em class="jxr_comment">// if the contextChar is either ATR || EXT</em>
+<a class="jxr_linenumber" name="L545" href="#L545">545</a>                     <em class="jxr_comment">// set the output to '\ufffd'</em>
+<a class="jxr_linenumber" name="L546" href="#L546">546</a>                     <strong class="jxr_keyword">if</strong>(contextChar == '\ufffd') {
+<a class="jxr_linenumber" name="L547" href="#L547">547</a>                         <strong class="jxr_keyword">if</strong> (dl - dp &lt; 1)
+<a class="jxr_linenumber" name="L548" href="#L548">548</a>                             <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L549" href="#L549">549</a>                         da[dp++] = '\ufffd';
+<a class="jxr_linenumber" name="L550" href="#L550">550</a>                         contextChar = INVALID_CHAR;
+<a class="jxr_linenumber" name="L551" href="#L551">551</a>                         needFlushing = false;
+<a class="jxr_linenumber" name="L552" href="#L552">552</a>                         sp++;
+<a class="jxr_linenumber" name="L553" href="#L553">553</a>                         <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L554" href="#L554">554</a>                     }
+<a class="jxr_linenumber" name="L555" href="#L555">555</a> 
+<a class="jxr_linenumber" name="L556" href="#L556">556</a>                     <strong class="jxr_keyword">switch</strong>(currentChar) {
+<a class="jxr_linenumber" name="L557" href="#L557">557</a>                     <strong class="jxr_keyword">case</strong> '\u0901':
+<a class="jxr_linenumber" name="L558" href="#L558">558</a>                     <strong class="jxr_keyword">case</strong> '\u0907':
+<a class="jxr_linenumber" name="L559" href="#L559">559</a>                     <strong class="jxr_keyword">case</strong> '\u0908':
+<a class="jxr_linenumber" name="L560" href="#L560">560</a>                     <strong class="jxr_keyword">case</strong> '\u090b':
+<a class="jxr_linenumber" name="L561" href="#L561">561</a>                     <strong class="jxr_keyword">case</strong> '\u093f':
+<a class="jxr_linenumber" name="L562" href="#L562">562</a>                     <strong class="jxr_keyword">case</strong> '\u0940':
+<a class="jxr_linenumber" name="L563" href="#L563">563</a>                     <strong class="jxr_keyword">case</strong> '\u0943':
+<a class="jxr_linenumber" name="L564" href="#L564">564</a>                     <strong class="jxr_keyword">case</strong> '\u0964':
+<a class="jxr_linenumber" name="L565" href="#L565">565</a>                         <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L566" href="#L566">566</a>                             <strong class="jxr_keyword">if</strong> (dl - dp &lt; 1)
+<a class="jxr_linenumber" name="L567" href="#L567">567</a>                                 <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L568" href="#L568">568</a>                             da[dp++] = contextChar;
+<a class="jxr_linenumber" name="L569" href="#L569">569</a>                             contextChar = currentChar;
+<a class="jxr_linenumber" name="L570" href="#L570">570</a>                             sp++;
+<a class="jxr_linenumber" name="L571" href="#L571">571</a>                             <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L572" href="#L572">572</a>                         }
+<a class="jxr_linenumber" name="L573" href="#L573">573</a>                         contextChar = currentChar;
+<a class="jxr_linenumber" name="L574" href="#L574">574</a>                         needFlushing = <strong class="jxr_keyword">true</strong>;
+<a class="jxr_linenumber" name="L575" href="#L575">575</a>                         sp++;
+<a class="jxr_linenumber" name="L576" href="#L576">576</a>                         <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L577" href="#L577">577</a>                     <strong class="jxr_keyword">case</strong> NUKTA_CHAR:
+<a class="jxr_linenumber" name="L578" href="#L578">578</a>                         <strong class="jxr_keyword">if</strong> (dl - dp &lt; 1)
+<a class="jxr_linenumber" name="L579" href="#L579">579</a>                                 <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L580" href="#L580">580</a>                         <strong class="jxr_keyword">switch</strong>(contextChar) {
+<a class="jxr_linenumber" name="L581" href="#L581">581</a>                         <strong class="jxr_keyword">case</strong> '\u0901':
+<a class="jxr_linenumber" name="L582" href="#L582">582</a>                             da[dp++] = '\u0950';
+<a class="jxr_linenumber" name="L583" href="#L583">583</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L584" href="#L584">584</a>                         <strong class="jxr_keyword">case</strong> '\u0907':
+<a class="jxr_linenumber" name="L585" href="#L585">585</a>                             da[dp++] = '\u090c';
+<a class="jxr_linenumber" name="L586" href="#L586">586</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L587" href="#L587">587</a>                         <strong class="jxr_keyword">case</strong> '\u0908':
+<a class="jxr_linenumber" name="L588" href="#L588">588</a>                             da[dp++] = '\u0961';
+<a class="jxr_linenumber" name="L589" href="#L589">589</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L590" href="#L590">590</a>                         <strong class="jxr_keyword">case</strong> '\u090b':
+<a class="jxr_linenumber" name="L591" href="#L591">591</a>                             da[dp++] = '\u0960';
+<a class="jxr_linenumber" name="L592" href="#L592">592</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L593" href="#L593">593</a>                         <strong class="jxr_keyword">case</strong> '\u093f':
+<a class="jxr_linenumber" name="L594" href="#L594">594</a>                             da[dp++] = '\u0962';
+<a class="jxr_linenumber" name="L595" href="#L595">595</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L596" href="#L596">596</a>                         <strong class="jxr_keyword">case</strong> '\u0940':
+<a class="jxr_linenumber" name="L597" href="#L597">597</a>                             da[dp++] = '\u0963';
+<a class="jxr_linenumber" name="L598" href="#L598">598</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L599" href="#L599">599</a>                         <strong class="jxr_keyword">case</strong> '\u0943':
+<a class="jxr_linenumber" name="L600" href="#L600">600</a>                             da[dp++] = '\u0944';
+<a class="jxr_linenumber" name="L601" href="#L601">601</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L602" href="#L602">602</a>                         <strong class="jxr_keyword">case</strong> '\u0964':
+<a class="jxr_linenumber" name="L603" href="#L603">603</a>                             da[dp++] = '\u093d';
+<a class="jxr_linenumber" name="L604" href="#L604">604</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L605" href="#L605">605</a>                         <strong class="jxr_keyword">case</strong> HALANT_CHAR:
+<a class="jxr_linenumber" name="L606" href="#L606">606</a>                             <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L607" href="#L607">607</a>                                 da[dp++] = contextChar;
+<a class="jxr_linenumber" name="L608" href="#L608">608</a>                                 contextChar = currentChar;
+<a class="jxr_linenumber" name="L609" href="#L609">609</a>                                 sp++;
+<a class="jxr_linenumber" name="L610" href="#L610">610</a>                                 <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L611" href="#L611">611</a>                             }
+<a class="jxr_linenumber" name="L612" href="#L612">612</a>                             da[dp++] = ZWJ_CHAR;
+<a class="jxr_linenumber" name="L613" href="#L613">613</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L614" href="#L614">614</a>                         <strong class="jxr_keyword">default</strong>:
+<a class="jxr_linenumber" name="L615" href="#L615">615</a>                             <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L616" href="#L616">616</a>                                 da[dp++] = contextChar;
+<a class="jxr_linenumber" name="L617" href="#L617">617</a>                                 contextChar = currentChar;
+<a class="jxr_linenumber" name="L618" href="#L618">618</a>                                 sp++;
+<a class="jxr_linenumber" name="L619" href="#L619">619</a>                                 <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L620" href="#L620">620</a>                             }
+<a class="jxr_linenumber" name="L621" href="#L621">621</a>                             da[dp++] = NUKTA_CHAR;
+<a class="jxr_linenumber" name="L622" href="#L622">622</a>                         }
+<a class="jxr_linenumber" name="L623" href="#L623">623</a>                         <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L624" href="#L624">624</a>                     <strong class="jxr_keyword">case</strong> HALANT_CHAR:
+<a class="jxr_linenumber" name="L625" href="#L625">625</a>                         <strong class="jxr_keyword">if</strong> (dl - dp &lt; 1)
+<a class="jxr_linenumber" name="L626" href="#L626">626</a>                             <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L627" href="#L627">627</a>                         <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L628" href="#L628">628</a>                             da[dp++] = contextChar;
+<a class="jxr_linenumber" name="L629" href="#L629">629</a>                             contextChar = currentChar;
+<a class="jxr_linenumber" name="L630" href="#L630">630</a>                             sp++;
+<a class="jxr_linenumber" name="L631" href="#L631">631</a>                             <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L632" href="#L632">632</a>                         }
+<a class="jxr_linenumber" name="L633" href="#L633">633</a>                         <strong class="jxr_keyword">if</strong>(contextChar == HALANT_CHAR) {
+<a class="jxr_linenumber" name="L634" href="#L634">634</a>                             da[dp++] = ZWNJ_CHAR;
+<a class="jxr_linenumber" name="L635" href="#L635">635</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L636" href="#L636">636</a>                         }
+<a class="jxr_linenumber" name="L637" href="#L637">637</a>                         da[dp++] = HALANT_CHAR;
+<a class="jxr_linenumber" name="L638" href="#L638">638</a>                         <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L639" href="#L639">639</a>                     <strong class="jxr_keyword">case</strong> INVALID_CHAR:
+<a class="jxr_linenumber" name="L640" href="#L640">640</a>                         <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L641" href="#L641">641</a>                             <strong class="jxr_keyword">if</strong> (dl - dp &lt; 1)
+<a class="jxr_linenumber" name="L642" href="#L642">642</a>                                 <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L643" href="#L643">643</a>                             da[dp++] = contextChar;
+<a class="jxr_linenumber" name="L644" href="#L644">644</a>                             contextChar = currentChar;
+<a class="jxr_linenumber" name="L645" href="#L645">645</a>                             sp++;
+<a class="jxr_linenumber" name="L646" href="#L646">646</a>                             <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L647" href="#L647">647</a>                         }
+<a class="jxr_linenumber" name="L648" href="#L648">648</a>                         <strong class="jxr_keyword">return</strong> CoderResult.unmappableForLength(1);
+<a class="jxr_linenumber" name="L649" href="#L649">649</a>                     <strong class="jxr_keyword">default</strong>:
+<a class="jxr_linenumber" name="L650" href="#L650">650</a>                         <strong class="jxr_keyword">if</strong> (dl - dp &lt; 1)
+<a class="jxr_linenumber" name="L651" href="#L651">651</a>                             <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L652" href="#L652">652</a>                         <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L653" href="#L653">653</a>                             da[dp++] = contextChar;
+<a class="jxr_linenumber" name="L654" href="#L654">654</a>                             contextChar = currentChar;
+<a class="jxr_linenumber" name="L655" href="#L655">655</a>                             sp++;
+<a class="jxr_linenumber" name="L656" href="#L656">656</a>                             <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L657" href="#L657">657</a>                         }
+<a class="jxr_linenumber" name="L658" href="#L658">658</a>                         da[dp++] = currentChar;
+<a class="jxr_linenumber" name="L659" href="#L659">659</a>                         <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L660" href="#L660">660</a>                     }<em class="jxr_comment">//end switch</em>
+<a class="jxr_linenumber" name="L661" href="#L661">661</a> 
+<a class="jxr_linenumber" name="L662" href="#L662">662</a>                 contextChar = currentChar;
+<a class="jxr_linenumber" name="L663" href="#L663">663</a>                 needFlushing = false;
+<a class="jxr_linenumber" name="L664" href="#L664">664</a>                 sp++;
+<a class="jxr_linenumber" name="L665" href="#L665">665</a>             }
+<a class="jxr_linenumber" name="L666" href="#L666">666</a>             <strong class="jxr_keyword">return</strong> CoderResult.UNDERFLOW;
+<a class="jxr_linenumber" name="L667" href="#L667">667</a>            } <strong class="jxr_keyword">finally</strong> {
+<a class="jxr_linenumber" name="L668" href="#L668">668</a>                 src.position(sp - src.arrayOffset());
+<a class="jxr_linenumber" name="L669" href="#L669">669</a>                 dst.position(dp - dst.arrayOffset());
+<a class="jxr_linenumber" name="L670" href="#L670">670</a>            }
+<a class="jxr_linenumber" name="L671" href="#L671">671</a>         }
+<a class="jxr_linenumber" name="L672" href="#L672">672</a> 
+<a class="jxr_linenumber" name="L673" href="#L673">673</a>         <strong class="jxr_keyword">private</strong> CoderResult decodeBufferLoop(ByteBuffer src,
+<a class="jxr_linenumber" name="L674" href="#L674">674</a>                                              CharBuffer dst)
+<a class="jxr_linenumber" name="L675" href="#L675">675</a>         {
+<a class="jxr_linenumber" name="L676" href="#L676">676</a>             <strong class="jxr_keyword">int</strong> mark = src.position();
+<a class="jxr_linenumber" name="L677" href="#L677">677</a> 
+<a class="jxr_linenumber" name="L678" href="#L678">678</a>             <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L679" href="#L679">679</a>                 <strong class="jxr_keyword">while</strong> (src.hasRemaining()) {
+<a class="jxr_linenumber" name="L680" href="#L680">680</a>                     <strong class="jxr_keyword">int</strong> index = src.get();
+<a class="jxr_linenumber" name="L681" href="#L681">681</a>                     index = ( index &lt; 0 )? ( index + 255 ):index;
+<a class="jxr_linenumber" name="L682" href="#L682">682</a>                     <strong class="jxr_keyword">char</strong> currentChar = directMapTable[index];
+<a class="jxr_linenumber" name="L683" href="#L683">683</a> 
+<a class="jxr_linenumber" name="L684" href="#L684">684</a>                     <em class="jxr_comment">// if the contextChar is either ATR || EXT</em>
+<a class="jxr_linenumber" name="L685" href="#L685">685</a>                     <em class="jxr_comment">// set the output to '\ufffd'</em>
+<a class="jxr_linenumber" name="L686" href="#L686">686</a>                     <strong class="jxr_keyword">if</strong>(contextChar == '\ufffd') {
+<a class="jxr_linenumber" name="L687" href="#L687">687</a>                         <strong class="jxr_keyword">if</strong> (dst.remaining() &lt; 1)
+<a class="jxr_linenumber" name="L688" href="#L688">688</a>                             <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L689" href="#L689">689</a>                         dst.put('\ufffd');
+<a class="jxr_linenumber" name="L690" href="#L690">690</a>                         contextChar = INVALID_CHAR;
+<a class="jxr_linenumber" name="L691" href="#L691">691</a>                         needFlushing = false;
+<a class="jxr_linenumber" name="L692" href="#L692">692</a>                         mark++;
+<a class="jxr_linenumber" name="L693" href="#L693">693</a>                         <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L694" href="#L694">694</a>                     }
+<a class="jxr_linenumber" name="L695" href="#L695">695</a> 
+<a class="jxr_linenumber" name="L696" href="#L696">696</a>                     <strong class="jxr_keyword">switch</strong>(currentChar) {
+<a class="jxr_linenumber" name="L697" href="#L697">697</a>                     <strong class="jxr_keyword">case</strong> '\u0901':
+<a class="jxr_linenumber" name="L698" href="#L698">698</a>                     <strong class="jxr_keyword">case</strong> '\u0907':
+<a class="jxr_linenumber" name="L699" href="#L699">699</a>                     <strong class="jxr_keyword">case</strong> '\u0908':
+<a class="jxr_linenumber" name="L700" href="#L700">700</a>                     <strong class="jxr_keyword">case</strong> '\u090b':
+<a class="jxr_linenumber" name="L701" href="#L701">701</a>                     <strong class="jxr_keyword">case</strong> '\u093f':
+<a class="jxr_linenumber" name="L702" href="#L702">702</a>                     <strong class="jxr_keyword">case</strong> '\u0940':
+<a class="jxr_linenumber" name="L703" href="#L703">703</a>                     <strong class="jxr_keyword">case</strong> '\u0943':
+<a class="jxr_linenumber" name="L704" href="#L704">704</a>                     <strong class="jxr_keyword">case</strong> '\u0964':
+<a class="jxr_linenumber" name="L705" href="#L705">705</a>                         <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L706" href="#L706">706</a>                             <strong class="jxr_keyword">if</strong> (dst.remaining() &lt; 1)
+<a class="jxr_linenumber" name="L707" href="#L707">707</a>                                 <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L708" href="#L708">708</a>                             dst.put(contextChar);
+<a class="jxr_linenumber" name="L709" href="#L709">709</a>                             contextChar = currentChar;
+<a class="jxr_linenumber" name="L710" href="#L710">710</a>                             mark++;
+<a class="jxr_linenumber" name="L711" href="#L711">711</a>                             <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L712" href="#L712">712</a>                         }
+<a class="jxr_linenumber" name="L713" href="#L713">713</a>                         contextChar = currentChar;
+<a class="jxr_linenumber" name="L714" href="#L714">714</a>                         needFlushing = <strong class="jxr_keyword">true</strong>;
+<a class="jxr_linenumber" name="L715" href="#L715">715</a>                         mark++;
+<a class="jxr_linenumber" name="L716" href="#L716">716</a>                         <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L717" href="#L717">717</a>                     <strong class="jxr_keyword">case</strong> NUKTA_CHAR:
+<a class="jxr_linenumber" name="L718" href="#L718">718</a>                         <strong class="jxr_keyword">if</strong> (dst.remaining() &lt; 1)
+<a class="jxr_linenumber" name="L719" href="#L719">719</a>                             <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L720" href="#L720">720</a>                         <strong class="jxr_keyword">switch</strong>(contextChar) {
+<a class="jxr_linenumber" name="L721" href="#L721">721</a>                         <strong class="jxr_keyword">case</strong> '\u0901':
+<a class="jxr_linenumber" name="L722" href="#L722">722</a>                             dst.put('\u0950');
+<a class="jxr_linenumber" name="L723" href="#L723">723</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L724" href="#L724">724</a>                         <strong class="jxr_keyword">case</strong> '\u0907':
+<a class="jxr_linenumber" name="L725" href="#L725">725</a>                             dst.put('\u090c');
+<a class="jxr_linenumber" name="L726" href="#L726">726</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L727" href="#L727">727</a>                         <strong class="jxr_keyword">case</strong> '\u0908':
+<a class="jxr_linenumber" name="L728" href="#L728">728</a>                             dst.put('\u0961');
+<a class="jxr_linenumber" name="L729" href="#L729">729</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L730" href="#L730">730</a>                         <strong class="jxr_keyword">case</strong> '\u090b':
+<a class="jxr_linenumber" name="L731" href="#L731">731</a>                             dst.put('\u0960');
+<a class="jxr_linenumber" name="L732" href="#L732">732</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L733" href="#L733">733</a>                         <strong class="jxr_keyword">case</strong> '\u093f':
+<a class="jxr_linenumber" name="L734" href="#L734">734</a>                             dst.put('\u0962');
+<a class="jxr_linenumber" name="L735" href="#L735">735</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L736" href="#L736">736</a>                         <strong class="jxr_keyword">case</strong> '\u0940':
+<a class="jxr_linenumber" name="L737" href="#L737">737</a>                             dst.put('\u0963');
+<a class="jxr_linenumber" name="L738" href="#L738">738</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L739" href="#L739">739</a>                         <strong class="jxr_keyword">case</strong> '\u0943':
+<a class="jxr_linenumber" name="L740" href="#L740">740</a>                             dst.put('\u0944');
+<a class="jxr_linenumber" name="L741" href="#L741">741</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L742" href="#L742">742</a>                         <strong class="jxr_keyword">case</strong> '\u0964':
+<a class="jxr_linenumber" name="L743" href="#L743">743</a>                             dst.put('\u093d');
+<a class="jxr_linenumber" name="L744" href="#L744">744</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L745" href="#L745">745</a>                         <strong class="jxr_keyword">case</strong> HALANT_CHAR:
+<a class="jxr_linenumber" name="L746" href="#L746">746</a>                             <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L747" href="#L747">747</a>                                 dst.put(contextChar);
+<a class="jxr_linenumber" name="L748" href="#L748">748</a>                                 contextChar = currentChar;
+<a class="jxr_linenumber" name="L749" href="#L749">749</a>                                 mark++;
+<a class="jxr_linenumber" name="L750" href="#L750">750</a>                                 <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L751" href="#L751">751</a>                             }
+<a class="jxr_linenumber" name="L752" href="#L752">752</a>                             dst.put(ZWJ_CHAR);
+<a class="jxr_linenumber" name="L753" href="#L753">753</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L754" href="#L754">754</a>                         <strong class="jxr_keyword">default</strong>:
+<a class="jxr_linenumber" name="L755" href="#L755">755</a>                             <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L756" href="#L756">756</a>                                 dst.put(contextChar);
+<a class="jxr_linenumber" name="L757" href="#L757">757</a>                                 contextChar = currentChar;
+<a class="jxr_linenumber" name="L758" href="#L758">758</a>                                 mark++;
+<a class="jxr_linenumber" name="L759" href="#L759">759</a>                                 <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L760" href="#L760">760</a>                             }
+<a class="jxr_linenumber" name="L761" href="#L761">761</a>                             dst.put(NUKTA_CHAR);
+<a class="jxr_linenumber" name="L762" href="#L762">762</a>                         }
+<a class="jxr_linenumber" name="L763" href="#L763">763</a>                         <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L764" href="#L764">764</a>                     <strong class="jxr_keyword">case</strong> HALANT_CHAR:
+<a class="jxr_linenumber" name="L765" href="#L765">765</a>                         <strong class="jxr_keyword">if</strong> (dst.remaining() &lt; 1)
+<a class="jxr_linenumber" name="L766" href="#L766">766</a>                             <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L767" href="#L767">767</a>                         <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L768" href="#L768">768</a>                             dst.put(contextChar);
+<a class="jxr_linenumber" name="L769" href="#L769">769</a>                             contextChar = currentChar;
+<a class="jxr_linenumber" name="L770" href="#L770">770</a>                             mark++;
+<a class="jxr_linenumber" name="L771" href="#L771">771</a>                             <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L772" href="#L772">772</a>                         }
+<a class="jxr_linenumber" name="L773" href="#L773">773</a>                         <strong class="jxr_keyword">if</strong>(contextChar == HALANT_CHAR) {
+<a class="jxr_linenumber" name="L774" href="#L774">774</a>                             dst.put(ZWNJ_CHAR);
+<a class="jxr_linenumber" name="L775" href="#L775">775</a>                             <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L776" href="#L776">776</a>                         }
+<a class="jxr_linenumber" name="L777" href="#L777">777</a>                         dst.put(HALANT_CHAR);
+<a class="jxr_linenumber" name="L778" href="#L778">778</a>                         <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L779" href="#L779">779</a>                     <strong class="jxr_keyword">case</strong> INVALID_CHAR:
+<a class="jxr_linenumber" name="L780" href="#L780">780</a>                         <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L781" href="#L781">781</a>                             <strong class="jxr_keyword">if</strong> (dst.remaining() &lt; 1)
+<a class="jxr_linenumber" name="L782" href="#L782">782</a>                                 <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L783" href="#L783">783</a>                             dst.put(contextChar);
+<a class="jxr_linenumber" name="L784" href="#L784">784</a>                             contextChar = currentChar;
+<a class="jxr_linenumber" name="L785" href="#L785">785</a>                             mark++;
+<a class="jxr_linenumber" name="L786" href="#L786">786</a>                             <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L787" href="#L787">787</a>                         }
+<a class="jxr_linenumber" name="L788" href="#L788">788</a>                         <strong class="jxr_keyword">return</strong> CoderResult.unmappableForLength(1);
+<a class="jxr_linenumber" name="L789" href="#L789">789</a>                     <strong class="jxr_keyword">default</strong>:
+<a class="jxr_linenumber" name="L790" href="#L790">790</a>                         <strong class="jxr_keyword">if</strong> (dst.remaining() &lt; 1)
+<a class="jxr_linenumber" name="L791" href="#L791">791</a>                             <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L792" href="#L792">792</a>                         <strong class="jxr_keyword">if</strong>(needFlushing) {
+<a class="jxr_linenumber" name="L793" href="#L793">793</a>                             dst.put(contextChar);
+<a class="jxr_linenumber" name="L794" href="#L794">794</a>                             contextChar = currentChar;
+<a class="jxr_linenumber" name="L795" href="#L795">795</a>                             mark++;
+<a class="jxr_linenumber" name="L796" href="#L796">796</a>                             <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L797" href="#L797">797</a>                         }
+<a class="jxr_linenumber" name="L798" href="#L798">798</a>                         dst.put(currentChar);
+<a class="jxr_linenumber" name="L799" href="#L799">799</a>                         <strong class="jxr_keyword">break</strong>;
+<a class="jxr_linenumber" name="L800" href="#L800">800</a>                     }<em class="jxr_comment">//end switch</em>
+<a class="jxr_linenumber" name="L801" href="#L801">801</a>                 contextChar = currentChar;
+<a class="jxr_linenumber" name="L802" href="#L802">802</a>                 needFlushing = false;
+<a class="jxr_linenumber" name="L803" href="#L803">803</a>                 mark++;
+<a class="jxr_linenumber" name="L804" href="#L804">804</a>                 }
+<a class="jxr_linenumber" name="L805" href="#L805">805</a>             <strong class="jxr_keyword">return</strong> CoderResult.UNDERFLOW;
+<a class="jxr_linenumber" name="L806" href="#L806">806</a>             } <strong class="jxr_keyword">finally</strong> {
+<a class="jxr_linenumber" name="L807" href="#L807">807</a>                 src.position(mark);
+<a class="jxr_linenumber" name="L808" href="#L808">808</a>            }
+<a class="jxr_linenumber" name="L809" href="#L809">809</a>         }
+<a class="jxr_linenumber" name="L810" href="#L810">810</a> 
+<a class="jxr_linenumber" name="L811" href="#L811">811</a>         <strong class="jxr_keyword">protected</strong> CoderResult decodeLoop(ByteBuffer src,
+<a class="jxr_linenumber" name="L812" href="#L812">812</a>                                          CharBuffer dst)
+<a class="jxr_linenumber" name="L813" href="#L813">813</a>         {
+<a class="jxr_linenumber" name="L814" href="#L814">814</a>             <strong class="jxr_keyword">if</strong> (src.hasArray() &amp;&amp; dst.hasArray())
+<a class="jxr_linenumber" name="L815" href="#L815">815</a>                 <strong class="jxr_keyword">return</strong> decodeArrayLoop(src, dst);
+<a class="jxr_linenumber" name="L816" href="#L816">816</a>             <strong class="jxr_keyword">else</strong>
+<a class="jxr_linenumber" name="L817" href="#L817">817</a>                 <strong class="jxr_keyword">return</strong> decodeBufferLoop(src, dst);
+<a class="jxr_linenumber" name="L818" href="#L818">818</a>         }
+<a class="jxr_linenumber" name="L819" href="#L819">819</a>     }
+<a class="jxr_linenumber" name="L820" href="#L820">820</a> 
+<a class="jxr_linenumber" name="L821" href="#L821">821</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> Encoder <strong class="jxr_keyword">extends</strong> CharsetEncoder {
+<a class="jxr_linenumber" name="L822" href="#L822">822</a> 
+<a class="jxr_linenumber" name="L823" href="#L823">823</a>         <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> byte NO_CHAR = (byte)255;
+<a class="jxr_linenumber" name="L824" href="#L824">824</a> 
+<a class="jxr_linenumber" name="L825" href="#L825">825</a>         <em class="jxr_comment">//private static CharToByteISCII91 c2b = new CharToByteISCII91();</em>
+<a class="jxr_linenumber" name="L826" href="#L826">826</a>         <em class="jxr_comment">//private static final byte[] directMapTable = c2b.getISCIIEncoderMap();</em>
+<a class="jxr_linenumber" name="L827" href="#L827">827</a> 
+<a class="jxr_linenumber" name="L828" href="#L828">828</a>         <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">final</strong> Surrogate.Parser sgp = <strong class="jxr_keyword">new</strong> Surrogate.Parser();
+<a class="jxr_linenumber" name="L829" href="#L829">829</a> 
+<a class="jxr_linenumber" name="L830" href="#L830">830</a>         <strong class="jxr_keyword">private</strong> Encoder(Charset cs) {
+<a class="jxr_linenumber" name="L831" href="#L831">831</a>             <strong class="jxr_keyword">super</strong>(cs, 2.0f, 2.0f);
+<a class="jxr_linenumber" name="L832" href="#L832">832</a>         }
+<a class="jxr_linenumber" name="L833" href="#L833">833</a> 
+<a class="jxr_linenumber" name="L834" href="#L834">834</a>         <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">boolean</strong> canEncode(<strong class="jxr_keyword">char</strong> ch) {
+<a class="jxr_linenumber" name="L835" href="#L835">835</a>             <em class="jxr_comment">//check for Devanagari range,ZWJ,ZWNJ and ASCII range.</em>
+<a class="jxr_linenumber" name="L836" href="#L836">836</a>             <strong class="jxr_keyword">return</strong> ((ch &gt;= '\u0900' &amp;&amp; ch &lt;= '\u097f' &amp;&amp;
+<a class="jxr_linenumber" name="L837" href="#L837">837</a>                      encoderMappingTable[2*(ch-'\u0900')] != NO_CHAR) ||
+<a class="jxr_linenumber" name="L838" href="#L838">838</a>                     (ch == '\u200d') ||
+<a class="jxr_linenumber" name="L839" href="#L839">839</a>                     (ch == '\u200c') ||
+<a class="jxr_linenumber" name="L840" href="#L840">840</a>                     (ch &lt;= '\u007f'));
+<a class="jxr_linenumber" name="L841" href="#L841">841</a>         }
+<a class="jxr_linenumber" name="L842" href="#L842">842</a> 
+<a class="jxr_linenumber" name="L843" href="#L843">843</a> 
+<a class="jxr_linenumber" name="L844" href="#L844">844</a>         <strong class="jxr_keyword">private</strong> CoderResult encodeArrayLoop(CharBuffer src,
+<a class="jxr_linenumber" name="L845" href="#L845">845</a>                                              ByteBuffer dst)
+<a class="jxr_linenumber" name="L846" href="#L846">846</a>         {
+<a class="jxr_linenumber" name="L847" href="#L847">847</a>             <strong class="jxr_keyword">char</strong>[] sa = src.array();
+<a class="jxr_linenumber" name="L848" href="#L848">848</a>             <strong class="jxr_keyword">int</strong> sp = src.arrayOffset() + src.position();
+<a class="jxr_linenumber" name="L849" href="#L849">849</a>             <strong class="jxr_keyword">int</strong> sl = src.arrayOffset() + src.limit();
+<a class="jxr_linenumber" name="L850" href="#L850">850</a>             assert (sp &lt;= sl);
+<a class="jxr_linenumber" name="L851" href="#L851">851</a>             sp = (sp &lt;= sl ? sp : sl);
+<a class="jxr_linenumber" name="L852" href="#L852">852</a>             byte[] da = dst.array();
+<a class="jxr_linenumber" name="L853" href="#L853">853</a>             <strong class="jxr_keyword">int</strong> dp = dst.arrayOffset() + dst.position();
+<a class="jxr_linenumber" name="L854" href="#L854">854</a>             <strong class="jxr_keyword">int</strong> dl = dst.arrayOffset() + dst.limit();
+<a class="jxr_linenumber" name="L855" href="#L855">855</a>             assert (dp &lt;= dl);
+<a class="jxr_linenumber" name="L856" href="#L856">856</a>             dp = (dp &lt;= dl ? dp : dl);
+<a class="jxr_linenumber" name="L857" href="#L857">857</a> 
+<a class="jxr_linenumber" name="L858" href="#L858">858</a>             <strong class="jxr_keyword">int</strong> outputSize = 0;
+<a class="jxr_linenumber" name="L859" href="#L859">859</a> 
+<a class="jxr_linenumber" name="L860" href="#L860">860</a>             <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L861" href="#L861">861</a>                 <strong class="jxr_keyword">char</strong> inputChar;
+<a class="jxr_linenumber" name="L862" href="#L862">862</a>                 <strong class="jxr_keyword">while</strong> (sp &lt; sl) {
+<a class="jxr_linenumber" name="L863" href="#L863">863</a>                     <strong class="jxr_keyword">int</strong> index = Integer.MIN_VALUE;
+<a class="jxr_linenumber" name="L864" href="#L864">864</a>                     inputChar = sa[sp];
+<a class="jxr_linenumber" name="L865" href="#L865">865</a> 
+<a class="jxr_linenumber" name="L866" href="#L866">866</a>                     <strong class="jxr_keyword">if</strong> (inputChar &gt;= 0x0000 &amp;&amp; inputChar &lt;= 0x007f) {
+<a class="jxr_linenumber" name="L867" href="#L867">867</a>                         <strong class="jxr_keyword">if</strong> (dl - dp &lt; 1)
+<a class="jxr_linenumber" name="L868" href="#L868">868</a>                             <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L869" href="#L869">869</a>                         da[dp++] = (byte) inputChar;
+<a class="jxr_linenumber" name="L870" href="#L870">870</a>                         sp++;
+<a class="jxr_linenumber" name="L871" href="#L871">871</a>                         <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L872" href="#L872">872</a>                     }
+<a class="jxr_linenumber" name="L873" href="#L873">873</a> 
+<a class="jxr_linenumber" name="L874" href="#L874">874</a>                     <em class="jxr_comment">// if inputChar == ZWJ replace it with halant</em>
+<a class="jxr_linenumber" name="L875" href="#L875">875</a>                     <em class="jxr_comment">// if inputChar == ZWNJ replace it with Nukta</em>
+<a class="jxr_linenumber" name="L876" href="#L876">876</a> 
+<a class="jxr_linenumber" name="L877" href="#L877">877</a>                     <strong class="jxr_keyword">if</strong> (inputChar == 0x200c) {
+<a class="jxr_linenumber" name="L878" href="#L878">878</a>                         inputChar = HALANT_CHAR;
+<a class="jxr_linenumber" name="L879" href="#L879">879</a>                     }
+<a class="jxr_linenumber" name="L880" href="#L880">880</a>                     <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (inputChar == 0x200d) {
+<a class="jxr_linenumber" name="L881" href="#L881">881</a>                         inputChar = NUKTA_CHAR;
+<a class="jxr_linenumber" name="L882" href="#L882">882</a>                     }
+<a class="jxr_linenumber" name="L883" href="#L883">883</a> 
+<a class="jxr_linenumber" name="L884" href="#L884">884</a>                     <strong class="jxr_keyword">if</strong> (inputChar &gt;= 0x0900 &amp;&amp; inputChar &lt;= 0x097f) {
+<a class="jxr_linenumber" name="L885" href="#L885">885</a>                         index = ((<strong class="jxr_keyword">int</strong>)(inputChar) - 0x0900)*2;
+<a class="jxr_linenumber" name="L886" href="#L886">886</a>                     }
+<a class="jxr_linenumber" name="L887" href="#L887">887</a> 
+<a class="jxr_linenumber" name="L888" href="#L888">888</a>                     <strong class="jxr_keyword">if</strong> (Character.isSurrogate(inputChar)) {
+<a class="jxr_linenumber" name="L889" href="#L889">889</a>                         <strong class="jxr_keyword">if</strong> (sgp.parse(inputChar, sa, sp, sl) &lt; 0)
+<a class="jxr_linenumber" name="L890" href="#L890">890</a>                             <strong class="jxr_keyword">return</strong> sgp.error();
+<a class="jxr_linenumber" name="L891" href="#L891">891</a>                         <strong class="jxr_keyword">return</strong> sgp.unmappableResult();
+<a class="jxr_linenumber" name="L892" href="#L892">892</a>                     }
+<a class="jxr_linenumber" name="L893" href="#L893">893</a> 
+<a class="jxr_linenumber" name="L894" href="#L894">894</a>                     <strong class="jxr_keyword">if</strong> (index == Integer.MIN_VALUE ||
+<a class="jxr_linenumber" name="L895" href="#L895">895</a>                         encoderMappingTable[index] == NO_CHAR) {
+<a class="jxr_linenumber" name="L896" href="#L896">896</a>                         <strong class="jxr_keyword">return</strong> CoderResult.unmappableForLength(1);
+<a class="jxr_linenumber" name="L897" href="#L897">897</a>                     } <strong class="jxr_keyword">else</strong> {
+<a class="jxr_linenumber" name="L898" href="#L898">898</a>                         <strong class="jxr_keyword">if</strong>(encoderMappingTable[index + 1] == NO_CHAR) {
+<a class="jxr_linenumber" name="L899" href="#L899">899</a>                             <strong class="jxr_keyword">if</strong>(dl - dp &lt; 1)
+<a class="jxr_linenumber" name="L900" href="#L900">900</a>                                 <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L901" href="#L901">901</a>                             da[dp++] = encoderMappingTable[index];
+<a class="jxr_linenumber" name="L902" href="#L902">902</a>                         } <strong class="jxr_keyword">else</strong> {
+<a class="jxr_linenumber" name="L903" href="#L903">903</a>                             <strong class="jxr_keyword">if</strong>(dl - dp &lt; 2)
+<a class="jxr_linenumber" name="L904" href="#L904">904</a>                                 <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L905" href="#L905">905</a>                             da[dp++] = encoderMappingTable[index];
+<a class="jxr_linenumber" name="L906" href="#L906">906</a>                             da[dp++] = encoderMappingTable[index + 1];
+<a class="jxr_linenumber" name="L907" href="#L907">907</a>                         }
+<a class="jxr_linenumber" name="L908" href="#L908">908</a>                         sp++;
+<a class="jxr_linenumber" name="L909" href="#L909">909</a>                     }
+<a class="jxr_linenumber" name="L910" href="#L910">910</a>                 }
+<a class="jxr_linenumber" name="L911" href="#L911">911</a>                 <strong class="jxr_keyword">return</strong> CoderResult.UNDERFLOW;
+<a class="jxr_linenumber" name="L912" href="#L912">912</a>             } <strong class="jxr_keyword">finally</strong> {
+<a class="jxr_linenumber" name="L913" href="#L913">913</a>                 src.position(sp - src.arrayOffset());
+<a class="jxr_linenumber" name="L914" href="#L914">914</a>                 dst.position(dp - dst.arrayOffset());
+<a class="jxr_linenumber" name="L915" href="#L915">915</a>             }
+<a class="jxr_linenumber" name="L916" href="#L916">916</a>         }
+<a class="jxr_linenumber" name="L917" href="#L917">917</a> 
+<a class="jxr_linenumber" name="L918" href="#L918">918</a>         <strong class="jxr_keyword">private</strong> CoderResult encodeBufferLoop(CharBuffer src,
+<a class="jxr_linenumber" name="L919" href="#L919">919</a>                                              ByteBuffer dst)
+<a class="jxr_linenumber" name="L920" href="#L920">920</a>         {
+<a class="jxr_linenumber" name="L921" href="#L921">921</a>             <strong class="jxr_keyword">int</strong> mark = src.position();
+<a class="jxr_linenumber" name="L922" href="#L922">922</a> 
+<a class="jxr_linenumber" name="L923" href="#L923">923</a>             <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L924" href="#L924">924</a>                 <strong class="jxr_keyword">char</strong> inputChar;
+<a class="jxr_linenumber" name="L925" href="#L925">925</a>                 <strong class="jxr_keyword">while</strong> (src.hasRemaining()) {
+<a class="jxr_linenumber" name="L926" href="#L926">926</a>                     <strong class="jxr_keyword">int</strong> index = Integer.MIN_VALUE;
+<a class="jxr_linenumber" name="L927" href="#L927">927</a>                     inputChar = src.get();
+<a class="jxr_linenumber" name="L928" href="#L928">928</a> 
+<a class="jxr_linenumber" name="L929" href="#L929">929</a>                     <strong class="jxr_keyword">if</strong> (inputChar &gt;= 0x0000 &amp;&amp; inputChar &lt;= 0x007f) {
+<a class="jxr_linenumber" name="L930" href="#L930">930</a>                         <strong class="jxr_keyword">if</strong> (dst.remaining() &lt; 1)
+<a class="jxr_linenumber" name="L931" href="#L931">931</a>                             <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L932" href="#L932">932</a>                         dst.put((byte) inputChar);
+<a class="jxr_linenumber" name="L933" href="#L933">933</a>                         mark++;
+<a class="jxr_linenumber" name="L934" href="#L934">934</a>                         <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L935" href="#L935">935</a>                     }
+<a class="jxr_linenumber" name="L936" href="#L936">936</a> 
+<a class="jxr_linenumber" name="L937" href="#L937">937</a>                     <em class="jxr_comment">// if inputChar == ZWJ replace it with halant</em>
+<a class="jxr_linenumber" name="L938" href="#L938">938</a>                     <em class="jxr_comment">// if inputChar == ZWNJ replace it with Nukta</em>
+<a class="jxr_linenumber" name="L939" href="#L939">939</a> 
+<a class="jxr_linenumber" name="L940" href="#L940">940</a>                     <strong class="jxr_keyword">if</strong> (inputChar == 0x200c) {
+<a class="jxr_linenumber" name="L941" href="#L941">941</a>                         inputChar = HALANT_CHAR;
+<a class="jxr_linenumber" name="L942" href="#L942">942</a>                     }
+<a class="jxr_linenumber" name="L943" href="#L943">943</a>                     <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (inputChar == 0x200d) {
+<a class="jxr_linenumber" name="L944" href="#L944">944</a>                         inputChar = NUKTA_CHAR;
+<a class="jxr_linenumber" name="L945" href="#L945">945</a>                     }
+<a class="jxr_linenumber" name="L946" href="#L946">946</a> 
+<a class="jxr_linenumber" name="L947" href="#L947">947</a>                     <strong class="jxr_keyword">if</strong> (inputChar &gt;= 0x0900 &amp;&amp; inputChar &lt;= 0x097f) {
+<a class="jxr_linenumber" name="L948" href="#L948">948</a>                         index = ((<strong class="jxr_keyword">int</strong>)(inputChar) - 0x0900)*2;
+<a class="jxr_linenumber" name="L949" href="#L949">949</a>                     }
+<a class="jxr_linenumber" name="L950" href="#L950">950</a> 
+<a class="jxr_linenumber" name="L951" href="#L951">951</a>                     <strong class="jxr_keyword">if</strong> (Character.isSurrogate(inputChar)) {
+<a class="jxr_linenumber" name="L952" href="#L952">952</a>                         <strong class="jxr_keyword">if</strong> (sgp.parse(inputChar, src) &lt; 0)
+<a class="jxr_linenumber" name="L953" href="#L953">953</a>                             <strong class="jxr_keyword">return</strong> sgp.error();
+<a class="jxr_linenumber" name="L954" href="#L954">954</a>                         <strong class="jxr_keyword">return</strong> sgp.unmappableResult();
+<a class="jxr_linenumber" name="L955" href="#L955">955</a>                     }
+<a class="jxr_linenumber" name="L956" href="#L956">956</a> 
+<a class="jxr_linenumber" name="L957" href="#L957">957</a>                     <strong class="jxr_keyword">if</strong> (index == Integer.MIN_VALUE ||
+<a class="jxr_linenumber" name="L958" href="#L958">958</a>                         encoderMappingTable[index] == NO_CHAR) {
+<a class="jxr_linenumber" name="L959" href="#L959">959</a>                         <strong class="jxr_keyword">return</strong> CoderResult.unmappableForLength(1);
+<a class="jxr_linenumber" name="L960" href="#L960">960</a>                     } <strong class="jxr_keyword">else</strong> {
+<a class="jxr_linenumber" name="L961" href="#L961">961</a>                         <strong class="jxr_keyword">if</strong>(encoderMappingTable[index + 1] == NO_CHAR) {
+<a class="jxr_linenumber" name="L962" href="#L962">962</a>                             <strong class="jxr_keyword">if</strong>(dst.remaining() &lt; 1)
+<a class="jxr_linenumber" name="L963" href="#L963">963</a>                                 <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L964" href="#L964">964</a>                             dst.put(encoderMappingTable[index]);
+<a class="jxr_linenumber" name="L965" href="#L965">965</a>                         } <strong class="jxr_keyword">else</strong> {
+<a class="jxr_linenumber" name="L966" href="#L966">966</a>                             <strong class="jxr_keyword">if</strong>(dst.remaining() &lt; 2)
+<a class="jxr_linenumber" name="L967" href="#L967">967</a>                                 <strong class="jxr_keyword">return</strong> CoderResult.OVERFLOW;
+<a class="jxr_linenumber" name="L968" href="#L968">968</a>                             dst.put(encoderMappingTable[index]);
+<a class="jxr_linenumber" name="L969" href="#L969">969</a>                             dst.put(encoderMappingTable[index + 1]);
+<a class="jxr_linenumber" name="L970" href="#L970">970</a>                         }
+<a class="jxr_linenumber" name="L971" href="#L971">971</a>                     }
+<a class="jxr_linenumber" name="L972" href="#L972">972</a>                     mark++;
+<a class="jxr_linenumber" name="L973" href="#L973">973</a>                 }
+<a class="jxr_linenumber" name="L974" href="#L974">974</a>                 <strong class="jxr_keyword">return</strong> CoderResult.UNDERFLOW;
+<a class="jxr_linenumber" name="L975" href="#L975">975</a>             } <strong class="jxr_keyword">finally</strong> {
+<a class="jxr_linenumber" name="L976" href="#L976">976</a>                 src.position(mark);
+<a class="jxr_linenumber" name="L977" href="#L977">977</a>             }
+<a class="jxr_linenumber" name="L978" href="#L978">978</a>         }
+<a class="jxr_linenumber" name="L979" href="#L979">979</a> 
+<a class="jxr_linenumber" name="L980" href="#L980">980</a>         <strong class="jxr_keyword">protected</strong> CoderResult encodeLoop(CharBuffer src,
+<a class="jxr_linenumber" name="L981" href="#L981">981</a>                                          ByteBuffer dst)
+<a class="jxr_linenumber" name="L982" href="#L982">982</a>         {
+<a class="jxr_linenumber" name="L983" href="#L983">983</a>             <strong class="jxr_keyword">if</strong> (src.hasArray() &amp;&amp; dst.hasArray())
+<a class="jxr_linenumber" name="L984" href="#L984">984</a>                 <strong class="jxr_keyword">return</strong> encodeArrayLoop(src, dst);
+<a class="jxr_linenumber" name="L985" href="#L985">985</a>             <strong class="jxr_keyword">else</strong>
+<a class="jxr_linenumber" name="L986" href="#L986">986</a>                 <strong class="jxr_keyword">return</strong> encodeBufferLoop(src, dst);
+<a class="jxr_linenumber" name="L987" href="#L987">987</a>         }
+<a class="jxr_linenumber" name="L988" href="#L988">988</a>     }
+<a class="jxr_linenumber" name="L989" href="#L989">989</a> }
+</pre>
+<hr/>
+<div id="footer"></div>
+</body>
+</html>
